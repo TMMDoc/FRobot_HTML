@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Adding stations</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="../1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="../2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="../3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Setting up the cell</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a class="active" href="6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../10_part/index.html">The part</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../10_part/11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../20_cycle/index.html">Planning and checking the cycle</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../20_cycle/21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="../28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="../32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="../33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="../34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Setting up the cell</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="6_addingstations.html">Adding stations</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Adding stations</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>add</strong> on the rail opens a menu:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Entry</th>
+<th class="tableblock halign-left valign-top">What it adds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Setup from File</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens a solution, cell config or drawing (the same as <strong>File ▸ Open&#8230;&#8203;</strong>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Cell Item (Library)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A pallet, table, conveyor or other item from the cell-item library</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Machine (Library)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A TruBend Center panel bender from the machine library</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Cell Component (File)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Your own fixture, from a STEP, STL or OBJ file</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2D Sheet (DXF / GEO)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The part: <a href="../10_part/11_importingthepart.html">Importing the part</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>add</strong> is on the rail for a new cell and once a solution exists. At other times:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Your own fixtures can be added with <strong>File ▸ Import ▸ Cell Component</strong> or <strong>settings ▸ Frames ▸ Import Cell Element…</strong>.</p>
+</li>
+<li>
+<p>Library items and machines can&#8217;t be added then.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A new element starts with its frame at zero (a pallet&#8217;s .ini sets its height). Place it in the <strong>Frames</strong> panel: see <a href="7_framesandroles.html">Frames and roles</a>.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_from_the_cell_item_library">From the cell-item library</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>add ▸ Cell Item (Library)</strong> lists the library. Type in the box to filter it; <strong>Enter</strong> takes the first match. Each row shows the item&#8217;s name and number, then its kind, its size in mm, its flags and, after the arrow, the role it gets.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/add-cell-item.png" alt="Add Cell Item">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 75%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">Role it gets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FlexCell Pallet, FlexCell Pallet V2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pickup</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FlexCell Centering Table, FlexCell Centering Table V2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Centering Table</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FlexCell Chute, FlexCell Conveyor, FlexCell Conveyor Small</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deposit</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FlexCell Regripping Station</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Overturner</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FlexCell Double Sheet Station, FlexCell Base</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Other</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>After you pick one:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>a toast confirms it, for example <strong>Added FlexCell Centering Table as Centering</strong>;</p>
+</li>
+<li>
+<p>the <strong>Frames</strong> panel opens on the new item, ready for its frame.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_from_the_machine_library">From the machine library</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>add ▸ Machine (Library)</strong> lists the machines, grouped by series. Type to filter.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/add-machine.png" alt="Add Machine">
+</div>
+</div>
+<div class="paragraph">
+<p>The library holds these TruBend Center models: 5030 B27, 5030 B27-V2, 5030 B33, 7020 B37, 7030 B32, 7030 B32-V1.1, 7030 B34 and 7030 B43.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Where a machine sits:</strong> its frame is on its bend line. Set it in the <strong>Frames</strong> panel.</p>
+</li>
+<li>
+<p><strong>A machine with a bed</strong> becomes the loading machine, whatever its role. The robot then loads the part onto the bed, waits while it is bent, and unloads it.</p>
+</li>
+<li>
+<p><strong>Where the part goes on the bed:</strong> set it with <strong>On machine bed</strong> in the Frames panel; see <a href="7_framesandroles.html#on-the-machine-bed">Frames and roles</a>.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_your_own_components">Your own components</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>add ▸ Cell Component (File)</strong> imports a fixture from a <strong>STEP</strong> (.step, .stp), <strong>STL</strong> or <strong>OBJ</strong> file.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Plain fixture:</strong> it comes in with the role <strong>Other</strong>. Open <strong>settings ▸ Frames</strong> to set its role and frame. Giving it the role Pickup does not make it a pickup: only a pallet can be one.</p>
+</li>
+<li>
+<p><strong>Pallet:</strong> put a small .ini file next to the mesh, containing <strong>Type=Pallet</strong> and the pallet height <strong>Z</strong>. FRobot takes the .ini with the mesh&#8217;s name, otherwise any .ini in the folder. The component then comes in as a pickup pallet:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>its role is <strong>Pickup</strong>;</p>
+</li>
+<li>
+<p>its frame origin is 50 mm in from its corner on the top face, at the height Z;</p>
+</li>
+<li>
+<p>the <strong>Frames</strong> panel opens on it.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <strong>Samples\SampleCellComponents</strong> folder has a pickup pallet and a centering table to try this with.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The sample centering table&#8217;s .ini also says <strong>Type=Pallet</strong>, so it comes in as a Pickup pallet. Change its role to <strong>Centering Table</strong> in the Frames panel.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_removing_an_element">Removing an element</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Select it in the <strong>Frames</strong> panel&#8217;s <strong>Cell Element</strong> list, or click it in the 3D view, and click <strong>Remove</strong>.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_from_the_cell_item_library">From the cell-item library</a>
+  </li>
+  <li level="1">
+   <a href="#_from_the_machine_library">From the machine library</a>
+  </li>
+  <li level="1">
+   <a href="#_your_own_components">Your own components</a>
+  </li>
+  <li level="1">
+   <a href="#_removing_an_element">Removing an element</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="5_newcell.html">A new cell</a></span>
+ <span class="next"><a href="7_framesandroles.html">Frames and roles</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

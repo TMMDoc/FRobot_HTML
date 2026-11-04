@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>The 3D model</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="../1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="../2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="../3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../4_cell/index.html">Setting up the cell</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../4_cell/5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">The part</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a class="active" href="12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../20_cycle/index.html">Planning and checking the cycle</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../20_cycle/21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="../28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="../32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="../33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="../34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">The part</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="12_the3dmodel.html">The 3D model</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>The 3D model</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Click <strong>3D Model</strong> in the Workflow window. There is no dialog:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Thickness:</strong> 1 mm, or the thickness given in a GEO file.</p>
+</li>
+<li>
+<p><strong>Stack:</strong> the pallet holds a stack of 5 parts.</p>
+</li>
+<li>
+<p><strong>Folding:</strong> a drawing with bend lines is shown folded, as the machine will bend it. Without bend lines it is a flat sheet.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/3d-model.png" alt="The 3D model">
+</div>
+</div>
+<div class="paragraph">
+<p>FRobot shows the 3D part on its own, centred. The Workflow window shows its name, for example <strong>2Fold — folded, 2 bends</strong>, and offers the next step, <strong>Pick &amp; Place Tech</strong>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The robot picks the part flat from the stack. In a cell with a bending machine, the part is bent there and put down folded. Without a machine, it stays flat all through the cycle.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_messages_from_the_drawing">Messages from the drawing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A drawing with stray lines or unclosed shapes still makes a part where it can. FRobot notes what it left out in its status line, which you read at the foot of the <strong>Part</strong> panel (<strong>settings ▸ Part</strong>):</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Message</th>
+<th class="tableblock halign-left valign-top">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>(n tiny loops ignored)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Very small closed shapes were skipped.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>(complex DXF — extruded outer profile + N holes)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The outline and its holes were used.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>(complex DXF — extruded outer silhouette only)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Only the outer outline was used; holes were left out.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>When no part can be made, the flat drawing disappears and the view stays empty. Click <strong>2D Part</strong> to see the drawing again. The status line says why:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Message</th>
+<th class="tableblock halign-left valign-top">What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>'file' has no closed profile to extrude</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The drawing needs a closed outer outline. Close it in your CAD program.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>… could not be extruded (no valid profile)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Check the outline for overlaps and gaps.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>A GEO file that can&#8217;t be read already fails when you open it, with <strong>2D open failed: … is not a GEO file</strong> or <strong>… has no cut contour</strong>. The file is damaged, not a GEO file, or has no outline to cut.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_going_back_to_the_drawing">Going back to the drawing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>2D Part</strong> in the Workflow window goes back to the flat drawing.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+This drops the 3D part and the solution, without asking. Save the solution first if you want to keep it.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_messages_from_the_drawing">Messages from the drawing</a>
+  </li>
+  <li level="1">
+   <a href="#_going_back_to_the_drawing">Going back to the drawing</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="11_importingthepart.html">Importing the part</a></span>
+ <span class="next"><a href="13_thicknessandstack.html">Thickness, material and the stack</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

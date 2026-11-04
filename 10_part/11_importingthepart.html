@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Importing the part</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="../1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="../2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="../3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../4_cell/index.html">Setting up the cell</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../4_cell/5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">The part</a>
+   <ul>
+    <li><button class="tree blank"></button><a class="active" href="11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../20_cycle/index.html">Planning and checking the cycle</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../20_cycle/21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="../28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="../32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="../33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="../34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">The part</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="11_importingthepart.html">Importing the part</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Importing the part</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The part the robot handles comes from its flat drawing: a <strong>DXF</strong> (.dxf) or <strong>GEO</strong> (.geo) file.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_opening_the_drawing">Opening the drawing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are three ways:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>File ▸ Open&#8230;&#8203;</strong>, or <strong>open</strong> on the rail, choosing the .dxf or .geo file;</p>
+</li>
+<li>
+<p><strong>add ▸ 2D Sheet (DXF / GEO)</strong>;</p>
+</li>
+<li>
+<p><strong>2D Part</strong> in the Workflow window, when no part is open yet.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/2d-part.png" alt="The 2D drawing">
+</div>
+</div>
+<div class="paragraph">
+<p>The drawing is shown flat, seen from above, and the cell is hidden while you look at it.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>The bottom bar</strong> shows the part&#8217;s name.</p>
+</li>
+<li>
+<p><strong>The rail</strong> gains <strong>measure</strong> and <strong>workflow</strong>. The Workflow window does not open by itself; click <strong>workflow</strong> to go on.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If the screen already holds a part, a solution or an unsaved new cell, the drawing opens on a new screen with a block of its own in the bottom bar. See <a href="../31_solutions.html#several-solutions-at-once">Several solutions at once</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+A drawing is not added to the recent files under <strong>File</strong>. Only solutions and cell configs are.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bend_lines">Bend lines</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Bend lines are drawn green and dashed, each with its bend angle:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>dashed for a bend up;</p>
+</li>
+<li>
+<p>dash-dot-dot for a bend down.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>FRobot finds them as follows:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">In a</th>
+<th class="tableblock halign-left valign-top">A bend line is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GEO file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a bend line of the file, with its angle</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DXF file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a line with a <strong>BEND_ANGLE:</strong> text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DXF file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a line on a layer named <strong>BEND</strong>, <strong>BIEG</strong> or <strong>FOLD</strong>. The angle comes from the layer name or the nearest number in the drawing; without either it is 90° up.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The 3D model is folded along these lines: see <a href="12_the3dmodel.html">The 3D model</a>.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="material-and-weight">Material and weight</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>FRobot reads the material from the drawing:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the GEO file&#8217;s header;</p>
+</li>
+<li>
+<p>a <strong>MATERIAL:</strong> text in a DXF.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The density comes from the GEO file, or from the material&#8217;s name. Without a material, FRobot takes steel at 7.85 kg/dm³.</p>
+</div>
+<div class="paragraph">
+<p>The material matters for two things:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>the part&#8217;s weight</strong>, which the gripper must be able to hold;</p>
+</li>
+<li>
+<p><strong>magnetic grippers</strong>, which are only used on a magnetic material.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>See <a href="../15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The material can&#8217;t be changed in FRobot. Set it in the drawing.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_opening_the_drawing">Opening the drawing</a>
+  </li>
+  <li level="1">
+   <a href="#_bend_lines">Bend lines</a>
+  </li>
+  <li level="1">
+   <a href="#material-and-weight">Material and weight</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="index.html">The part</a></span>
+ <span class="next"><a href="12_the3dmodel.html">The 3D model</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

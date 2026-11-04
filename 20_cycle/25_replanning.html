@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Re-planning</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="../1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="../2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="../3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../4_cell/index.html">Setting up the cell</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../4_cell/5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../10_part/index.html">The part</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../10_part/11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Planning and checking the cycle</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a class="active" href="25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="../28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="../32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="../33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="../34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Planning and checking the cycle</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="25_replanning.html">Re-planning</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Re-planning</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>recompute</strong> on the rail plans the cycle again, with a planner you choose.</p>
+</div>
+<div class="paragraph">
+<p>Plan again after you change the cell under a solution:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>after you move a station or change its role;</p>
+</li>
+<li>
+<p>after you add or show an obstacle;</p>
+</li>
+<li>
+<p>after you change the gripper or the TCP;</p>
+</li>
+<li>
+<p>after a collision the first plan could not avoid.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_recompute_panel">The Recompute panel</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/recompute.png" alt="The Recompute panel">
+</div>
+</div>
+<div class="paragraph">
+<p>Choose a <strong>Planner</strong> and click <strong>Recompute</strong>. <strong>Cancel</strong> closes the panel without planning.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 11.1111%;">
+<col style="width: 88.8889%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Planner</th>
+<th class="tableblock halign-left valign-top">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rules only</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FRobot&#8217;s rule-based planner, the one FRobot starts with. Quick and predictable.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>RRT fallback</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The rules first. Where a swing is still blocked, a sampling search (RRT) finds a way round for just that move. Everything the rules planned stays.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rules-guided RRT (faster)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The quick rules lay out each swing, and the sampling search bridges at once where it is still blocked. The slower rules run only if that fails.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>A toast confirms it, for example <strong>Recomputed with Rules-guided RRT (faster) — trajectories updated</strong>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>For the whole session:</strong> the planner you pick stays for every later plan, not just this one. That includes a new solution from <strong>Pick &amp; Place Tech</strong>, a cell config loaded, a robot switch, and changes in the Pickup panel.</p>
+</li>
+<li>
+<p><strong>Saving:</strong> the planner choice is not saved. When FRobot starts, it is back to <strong>Rules only</strong>.</p>
+</li>
+<li>
+<p><strong>Regrip:</strong> swings at the Overturner always use the rules-guided search.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Re-planning replaces every waypoint, including the ones you edited by hand. Edit waypoints after the last re-plan.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The <strong>Overrides</strong> in the panel are not used by the planner in this version.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_experimental_features">Experimental Features</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Help ▸ Experimental Features&#8230;&#8203;</strong> opens diagnostic views, and the same two planner switches.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/experimental.png" alt="Experimental Features">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 42.8571%;">
+<col style="width: 57.1429%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Switch</th>
+<th class="tableblock halign-left valign-top">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Show via-computation geometry</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Draws how the planner routed each swing: magenta lines and black points, RRT routes in cyan</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Show work envelope (min + max reach)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Draws the robot&#8217;s reach: green for the maximum, red for the zone it can never reach</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Sampling fallback for blocked moves (RRT)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>RRT fallback</strong> planner</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Rules-guided RRT (faster)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>Rules-guided RRT</strong> planner</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The planner switches act on the next plan; they do not plan by themselves. None of these switches is saved.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_the_recompute_panel">The Recompute panel</a>
+  </li>
+  <li level="1">
+   <a href="#_experimental_features">Experimental Features</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="24_waypoints.html">Waypoints</a></span>
+ <span class="next"><a href="26_collisions.html">Collisions and clearance</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Machine Defaults</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="../1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="../2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="../3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../4_cell/index.html">Setting up the cell</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../4_cell/5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../10_part/index.html">The part</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../10_part/11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../20_cycle/index.html">Planning and checking the cycle</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../20_cycle/21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">The robot program</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a class="active" href="30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="../32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="../33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="../34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">The robot program</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="30_machinedefaults.html">Machine Defaults</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Machine Defaults</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Machine Defaults</strong> sets the post-processor and the program format. Open it with <strong>settings ▸ Machine Defaults</strong> or <strong>File ▸ Tools ▸ Post-Processor&#8230;&#8203;</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/machine-defaults.png" alt="Machine Defaults">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 77.7778%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Post-processor location</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The post-processor program, RobotPost.exe. <strong>Browse…</strong> finds it. Until it is set, the field shows a path from the developers' PC, which won&#8217;t exist on yours.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Use new RBC output format (RBCFormat.adoc)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Writes the .rbc in the new format. The post-processor is then not run.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Click <strong>Save</strong> to keep the settings, or <strong>Cancel</strong>.</p>
+</div>
+<div class="paragraph">
+<p>These settings belong to the installation, not to a cell. They are kept in <strong>Bin\postproc.cfg</strong> and <strong>Bin\machine.cfg</strong>.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setting_up_robotpost">Setting up RobotPost</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>RobotPost is not installed with FRobot.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Install RobotPost.</p>
+</li>
+<li>
+<p>In Machine Defaults, click <strong>Browse…</strong> and pick <strong>RobotPost.exe</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Save</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>From then on, every program FRobot writes is post-processed. The FANUC programs appear next to RobotPost.exe: see <a href="29_writingtheprogram.html#where-the-files-go">Writing the robot program</a>.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_setting_up_robotpost">Setting up RobotPost</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="29_writingtheprogram.html">Writing the robot program</a></span>
+ <span class="next"><a href="../31_solutions.html">Solutions</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

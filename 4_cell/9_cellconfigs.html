@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Cell configs</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="../1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="../2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="../3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Setting up the cell</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a class="active" href="9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../10_part/index.html">The part</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../10_part/11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../20_cycle/index.html">Planning and checking the cycle</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../20_cycle/21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="../28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="../32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="../33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="../34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Setting up the cell</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="9_cellconfigs.html">Cell configs</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Cell configs</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>A cell config stores a cell so you can use it again with other parts. It is a .curl file, kept per robot in the installation folder under <strong>CellConfigs\&lt;robot&gt;</strong>.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_saving_a_cell">Saving a cell</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Choose <strong>File ▸ Save Cell Config</strong>.</p>
+</li>
+<li>
+<p>Type a name and click <strong>Save</strong>, or press <strong>Enter</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/save-cell-config.png" alt="Save Cell Config">
+</div>
+</div>
+<div class="paragraph">
+<p>FRobot writes <strong>CellConfigs\&lt;robot&gt;\&lt;name&gt;.curl</strong> and confirms with a toast, for example <strong>Cell config saved: FlexCell.curl</strong>. You can&#8217;t choose another folder.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The name box starts with the current cell&#8217;s name, often <strong>Default</strong>, and an existing config of that name is replaced without asking. Type a new name unless you mean to replace it.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name it Default</strong> to make it the cell that robot starts with.</p>
+</li>
+<li>
+<p><strong>Before a solution exists</strong>, <strong>File ▸ Save</strong> and <strong>File ▸ Save As&#8230;&#8203;</strong> also save a cell config.</p>
+</li>
+<li>
+<p><strong>Once a solution exists</strong>, <strong>File ▸ Save Cell Config</strong> saves the cell and the part, but not the cycle. <strong>File ▸ Save</strong> saves the whole solution: see <a href="../31_solutions.html">Solutions</a>.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Changes to a cell without a part (stations moved or added) don&#8217;t count as unsaved, so FRobot does not ask about them when you close it. Save the cell config before you close.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_what_a_cell_config_holds">What a cell config holds</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>The robot.</strong></p>
+</li>
+<li>
+<p><strong>Every cell element:</strong> its library item, machine or file, with its role and frame, its palletizing grid and its place on the machine bed.</p>
+</li>
+<li>
+<p><strong>Home:</strong> the pose and the joint values.</p>
+</li>
+<li>
+<p><strong>The tool:</strong> the gripper and its .DAT file, how it is mounted, and the TCP.</p>
+</li>
+<li>
+<p><strong>The obstacle box&#8217;s position.</strong></p>
+</li>
+<li>
+<p><strong>The STEP parts</strong> and where they are placed.</p>
+</li>
+<li>
+<p><strong>The part, if one is open:</strong> a copy of its drawing file, its thickness and stack, and its positions and grips at each station.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_what_it_does_not_hold">What it does not hold</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The collision triangles.</p>
+</li>
+<li>
+<p>Whether the obstacle box is shown.</p>
+</li>
+<li>
+<p>The Display switches.</p>
+</li>
+<li>
+<p>The planner chosen in Recompute.</p>
+</li>
+<li>
+<p>The Machine Defaults (they belong to the installation).</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_opening_a_cell_config">Opening a cell config</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are three ways:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>File ▸ Open&#8230;&#8203;</strong> or <strong>open</strong>, choosing a .curl file;</p>
+</li>
+<li>
+<p>the robot selector (the robot in the bottom bar, or the layers badge in the Workflow window), clicking one of the configs listed under a robot;</p>
+</li>
+<li>
+<p>a cell config named <strong>Default</strong> is loaded when FRobot starts on that robot.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>What happens:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The cell config loads into the screen you are on, and the robot switches to the config&#8217;s robot.</p>
+</li>
+<li>
+<p><strong>If a part is open</strong>, it stays and FRobot plans it in the new cell straight away. This happens without asking, also over a solution: waypoints you edited by hand are lost, and the gripper may be chosen again.</p>
+</li>
+<li>
+<p><strong>If the config was saved with a part</strong>, that part is loaded and planned.</p>
+</li>
+<li>
+<p><strong>Otherwise</strong> the cell is shown on its own.</p>
+</li>
+<li>
+<p><strong>The Workflow window:</strong> opening from <strong>File ▸ Open&#8230;&#8203;</strong> opens it, or closes it if it was open. A config loaded from the robot selector leaves it as it is.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+If the cell config uses a library item, machine or file that is not on this PC, that element is left out. Only a short note at the bottom right of the 3D view says so. Check that every station is there.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+A later setup of FRobot does not overwrite the <strong>CellConfigs</strong> folder, and uninstalling leaves it in place.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_saving_a_cell">Saving a cell</a>
+  </li>
+  <li level="2">
+   <a href="#_what_a_cell_config_holds">What a cell config holds</a>
+  </li>
+  <li level="2">
+   <a href="#_what_it_does_not_hold">What it does not hold</a>
+  </li>
+  <li level="1">
+   <a href="#_opening_a_cell_config">Opening a cell config</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="8_obstacles.html">Obstacles</a></span>
+ <span class="next"><a href="../10_part/index.html">The part</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

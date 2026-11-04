@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="res/bento.css">
+  <link rel="stylesheet" href="res/site.css">
+  <link rel="stylesheet" href="res/tree.css">
+  <link rel="stylesheet" href="res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Solutions</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="4_cell/index.html">Setting up the cell</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="4_cell/5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="10_part/index.html">The part</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="10_part/11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="10_part/12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="10_part/13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="10_part/14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="20_cycle/index.html">Planning and checking the cycle</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="20_cycle/21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a class="active" href="31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="31_solutions.html">Solutions</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Solutions</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>A <strong>solution file</strong> (.fr) holds everything about one part in one cell, so you can open it again exactly as it was.</p>
+</div>
+<div class="paragraph">
+<p>It contains:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>the cell</strong>, with its gripper, TCP and Home;</p>
+</li>
+<li>
+<p><strong>the part</strong>, with a copy of its drawing, so the .fr still opens when the drawing file has moved;</p>
+</li>
+<li>
+<p><strong>the stack</strong> and the deposit place;</p>
+</li>
+<li>
+<p><strong>the cycle as you edited it</strong>, and the cycle as FRobot planned it, so <strong>Reset All</strong> still works;</p>
+</li>
+<li>
+<p><strong>where the cycle was playing.</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It does not keep the planner chosen in Recompute, or a continuous run: the saved cycle is a single cycle.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_saving">Saving</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>File ▸ Save</strong> saves the solution.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>The first time</strong>, the <strong>Save Solution</strong> dialog asks where to save it. It suggests the name from the bottom bar.</p>
+</li>
+<li>
+<p><strong>After that</strong>, Save writes to the same file without asking. That includes a solution you opened, the samples too: use <strong>Save As&#8230;&#8203;</strong> to keep the original.</p>
+</li>
+<li>
+<p><strong>After a rename</strong> in the bottom bar, Save writes <strong>&lt;new name&gt;.fr</strong> in the same folder and leaves the old file as it was. If a file with the new name exists, FRobot asks <strong>… already exists. Replace it?</strong> A solution never saved gets the Save dialog, with the new name filled in.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>File ▸ Save As&#8230;&#8203;</strong> always asks where to save.</p>
+</div>
+<div class="paragraph">
+<p>A toast confirms <strong>Solution saved: 2Fold.fr</strong>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Before a solution exists, <strong>Save</strong> and <strong>Save As&#8230;&#8203;</strong> save the cell as a cell config instead: see <a href="4_cell/9_cellconfigs.html">Cell configs</a>.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_opening">Opening</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are three ways:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>File ▸ Open&#8230;&#8203;</strong> or <strong>open</strong> on the rail, choosing a .fr file;</p>
+</li>
+<li>
+<p>one of the two recent files at the bottom of the <strong>File</strong> menu (for this session);</p>
+</li>
+<li>
+<p>double-click a .fr file in Explorer.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The solution opens exactly as it was saved, with its edits; nothing is planned again. The Workflow window opens with it (or closes, if it was already open).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+FRobot registers the .fr file type for you each time it starts, so .fr files show the FRobot icon. Every double-click starts a new FRobot window.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If a solution can&#8217;t be opened, a toast says why:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Message</th>
+<th class="tableblock halign-left valign-top">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open solution failed: …</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The file can&#8217;t be read: it is damaged or not an FRobot solution</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Not a solution file</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The file reads, but holds no cell</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Solution&#8217;s part could not be restored (DXF missing?)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The part could not be rebuilt from the file</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>… files are no longer supported — open a solution (.fr) or a cell config (.curl)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The file type can&#8217;t be opened (for example an old .fcell)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>A solution that fails to open still adds a block to the bottom bar; close it with its ✕.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="several-solutions-at-once">Several solutions at once</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can keep several solutions open, each on its own screen. Opening another solution or drawing, or creating a new cell, opens a new screen when the current one holds something. A cell config loads into the current screen instead.</p>
+</div>
+<div class="paragraph">
+<p>The bottom bar has a block for each open solution (pictured in <a href="2_thescreen.html#the-bottom-bar">The screen</a>):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>The active solution</strong> is the block with the part name, thickness and robot.</p>
+</li>
+<li>
+<p><strong>Another solution:</strong> click its block to switch to it. It comes back exactly as you left it, without planning again.</p>
+</li>
+<li>
+<p><strong>Closing:</strong> the <strong>✕</strong> before a block&#8217;s name closes that solution. Closing the active one shows its neighbour; closing the last one leaves the empty start screen.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_unsaved_changes">Unsaved changes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When you close a solution with changes that are not saved, or close FRobot, it asks first:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/unsaved.png" alt="Unsaved changes">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 66.6666%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Button</th>
+<th class="tableblock halign-left valign-top">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Save</strong> (<strong>Save all</strong> for several)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Saves, then closes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Don&#8217;t save</strong> (<strong>Exit without saving</strong> when closing FRobot)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Closes without saving</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Cancel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stays where you are</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Esc</strong>, <strong>Enter</strong>, the round ✕ and a click outside the card all mean <strong>Cancel</strong>.</p>
+</div>
+<div class="paragraph">
+<p>These count as changes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>a new or changed solution;</p>
+</li>
+<li>
+<p>a new cell with stations in it;</p>
+</li>
+<li>
+<p>a new name typed in the bottom bar.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These do not count:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>playing, scrubbing and resetting the simulation;</p>
+</li>
+<li>
+<p>a drawing that is open but not yet made 3D;</p>
+</li>
+<li>
+<p>changes to a cell opened from a cell config, while it has no part. Save the cell config yourself: see <a href="4_cell/9_cellconfigs.html">Cell configs</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_saving">Saving</a>
+  </li>
+  <li level="1">
+   <a href="#_opening">Opening</a>
+  </li>
+  <li level="1">
+   <a href="#several-solutions-at-once">Several solutions at once</a>
+  </li>
+  <li level="1">
+   <a href="#_unsaved_changes">Unsaved changes</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="28_robotprogram/30_machinedefaults.html">Machine Defaults</a></span>
+ <span class="next"><a href="32_troubleshooting.html">Troubleshooting</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="res/index.js"></script>
+    <script src="res/files.js"></script>
+    <script src="res/site.js"></script>
+
+    
+</body>
+</html>

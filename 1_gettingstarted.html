@@ -1,0 +1,427 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="res/bento.css">
+  <link rel="stylesheet" href="res/site.css">
+  <link rel="stylesheet" href="res/tree.css">
+  <link rel="stylesheet" href="res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Getting started</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a class="active" href="1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="4_cell/index.html">Setting up the cell</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="4_cell/5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="10_part/index.html">The part</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="10_part/11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="10_part/12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="10_part/13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="10_part/14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="20_cycle/index.html">Planning and checking the cycle</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="20_cycle/21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="1_gettingstarted.html">Getting started</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Getting started</h1>
+<div class="sect1">
+<h2 id="_installing_frobot">Installing FRobot</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Run the setup program, <strong>Setup.FRobot.&lt;version&gt;.exe</strong>, and follow its steps.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>It needs administrator rights, and asks you to accept the licence agreement.</p>
+</li>
+<li>
+<p>It installs FRobot into <strong>C:\Metamation\FRobot</strong> unless you choose another folder.</p>
+</li>
+<li>
+<p>It can put an FRobot icon on the desktop.</p>
+</li>
+<li>
+<p>The setup brings everything FRobot needs to run, including the .NET runtime.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>At the end you can start FRobot straight away.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>FRobot appears in the Start menu as <strong>FRobot</strong>.</p>
+</div>
+<div class="sect2">
+<h3 id="_what_is_installed">What is installed</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Folder</th>
+<th class="tableblock halign-left valign-top">What is in it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Bin</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FRobot itself, and the settings it keeps between sessions</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>robots</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The robot models: FanucX, LR10iA_10, M20iD_25 and M710iD_50M</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>grippers</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The gripper catalog: the grippers, their suction cups and their priorities</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>CellItems</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The cell-item library: pallets, centering tables, conveyors, a chute, a regripping station …</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Machines</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The machine library: the TruBend Center panel benders</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>CellConfigs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The saved cell configs, one folder per robot</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Samples</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sample parts, solutions, grippers and cell components to try FRobot with</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Wad</strong>, <strong>Nori</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pictures and other resources FRobot uses</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+A later setup does not overwrite <strong>CellConfigs</strong>, and uninstalling FRobot leaves it in place. The cells you saved are kept.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The post-processor that turns FRobot&#8217;s program into a FANUC program (RobotPost) is not part of the setup. Install it separately, then tell FRobot where it is: see <a href="28_robotprogram/30_machinedefaults.html">Machine Defaults</a>.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_starting_frobot">Starting FRobot</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Start FRobot from the Start menu or the desktop icon. Double-clicking a solution file (.fr) in Explorer also starts FRobot and opens that solution. FRobot registers the .fr file type the first time it starts, so this works from then on.</p>
+</div>
+<div class="paragraph">
+<p>FRobot fills the whole screen, including the taskbar.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <strong>Maximize</strong> button at the top right switches between the full screen and a smaller window.</p>
+</li>
+<li>
+<p>Drag the title bar to move the window.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_the_start_screen">The start screen</h3>
+<div class="imageblock">
+<div class="content">
+<img src="img/start.png" alt="The start screen">
+</div>
+</div>
+<div class="paragraph">
+<p>FRobot opens with an empty 3D view.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>The robot and its cell are already loaded, but hidden.</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>The robot is the one you used last; the very first time, it is <strong>FanucX</strong>.</p>
+</li>
+<li>
+<p>The cell is that robot&#8217;s cell config named <strong>Default</strong>, if it has one. FanucX and M710iD_50M ship without one, so their cell starts empty.</p>
+</li>
+<li>
+<p>Robot and cell appear when you open a cell config or a solution, or when <strong>Pick &amp; Place Tech</strong> creates a solution.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>The tool rail</strong> on the left offers only its entry tools: <strong>open</strong>, <strong>language</strong>, <strong>settings</strong>, <strong>database</strong> and <strong>info</strong>. More tools appear as you go: see <a href="2_thescreen.html">The screen</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To begin, open a part&#8217;s drawing or a cell config with <strong>File ▸ Open&#8230;&#8203;</strong> or the <strong>open</strong> button. Or follow <a href="3_firstprogram.html">Your first program</a>.</p>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_sample_files">The sample files</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>Samples</strong> folder has files to learn FRobot with:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 22.2222%;">
+<col style="width: 77.7778%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Folder</th>
+<th class="tableblock halign-left valign-top">What is in it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Samples\SampleParts\2d</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flat drawings: <strong>2Fold.geo</strong> and <strong>1000x1000Fold.geo</strong> (with bend lines), <strong>FRob_test.dxf</strong>, <strong>TATPart 1.dxf</strong>; and solutions made from them (.fr)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Samples\SampleParts\fr</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finished solutions (.fr) on different robots and cells, including cells with a machine and a cluttered cell</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Samples\SampleGrippers</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Two grippers to import: <strong>ConVac_270x200</strong> and <strong>FCVac_6cup</strong>, each a mesh with its .DAT file</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Samples\SampleCellComponents</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A pickup pallet and a centering table to import, each a mesh with its .ini file</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The two files in <strong>Samples\CellConfigs</strong> (.fcell) are in an old format that FRobot no longer opens. The cell configs you can use are in the <strong>CellConfigs</strong> folder.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_where_your_work_is_kept">Where your work is kept</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">What</th>
+<th class="tableblock halign-left valign-top">Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Solutions (.fr)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wherever you save them</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell configs (.curl)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>CellConfigs\&lt;robot&gt;\&lt;name&gt;.curl</strong> in the installation folder</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Robot programs (.rbc)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Output\&lt;drawing name&gt;.rbc</strong> in the installation folder</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FANUC programs (.LS)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Next to the post-processor (RobotPost.exe), in a folder named after the part</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Your settings</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In <strong>Bin</strong>: the last robot, Home, the TCP and the mounted gripper, the panel positions and the Machine Defaults</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>See <a href="33_reference.html#folders-and-settings-files">Reference</a> for the full list of settings files.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_installing_frobot">Installing FRobot</a>
+  </li>
+  <li level="2">
+   <a href="#_what_is_installed">What is installed</a>
+  </li>
+  <li level="1">
+   <a href="#_starting_frobot">Starting FRobot</a>
+  </li>
+  <li level="2">
+   <a href="#_the_start_screen">The start screen</a>
+  </li>
+  <li level="1">
+   <a href="#_the_sample_files">The sample files</a>
+  </li>
+  <li level="1">
+   <a href="#_where_your_work_is_kept">Where your work is kept</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="index.html">FRobot User Manual</a></span>
+ <span class="next"><a href="2_thescreen.html">The screen</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="res/index.js"></script>
+    <script src="res/files.js"></script>
+    <script src="res/site.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="res/bento.css">
+  <link rel="stylesheet" href="res/site.css">
+  <link rel="stylesheet" href="res/tree.css">
+  <link rel="stylesheet" href="res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Your first program</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a class="active" href="3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="4_cell/index.html">Setting up the cell</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="4_cell/5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="10_part/index.html">The part</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="10_part/11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="10_part/12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="10_part/13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="10_part/14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="20_cycle/index.html">Planning and checking the cycle</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="20_cycle/21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="3_firstprogram.html">Your first program</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Your first program</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This walk-through takes the sample part <strong>2Fold</strong> from its flat drawing to a robot program. It uses the M20iD_25 robot and its default cell, which has a pickup pallet, a centering table and a deposit. It takes about five minutes.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1_open_the_cell">1. Open the cell</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Choose <strong>File ▸ Open&#8230;&#8203;</strong> (or the <strong>open</strong> button on the rail).</p>
+</li>
+<li>
+<p>In the installation folder, go to <strong>CellConfigs\M20iD_25</strong> and open <strong>Default.curl</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The cell appears in the 3D view and the <strong>Workflow</strong> window opens. The Workflow window shows the steps from part to program; you will use it throughout.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Don&#8217;t skip this step on a new installation. FRobot first starts on the FanucX robot, whose cell is empty: with no pickup pallet, <strong>Pick &amp; Place Tech</strong> can&#8217;t create a solution.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_open_the_part">2. Open the part</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Choose <strong>File ▸ Open&#8230;&#8203;</strong> again.</p>
+</li>
+<li>
+<p>Go to <strong>Samples\SampleParts\2d</strong> and open <strong>2Fold.geo</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The drawing appears flat, seen from above, and the cell is hidden while you look at it. The green dashed lines are the bend lines, each with its bend angle.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/first-2d-part.png" alt="The 2D drawing">
+</div>
+</div>
+<div class="paragraph">
+<p>The bottom bar now shows the part&#8217;s name, <strong>2Fold</strong>. If the Workflow window is not open, click <strong>workflow</strong> on the rail.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/workflow-2d.png" alt="The Workflow window with a 2D part">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_make_the_3d_model">3. Make the 3D model</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Click <strong>3D Model</strong> in the Workflow window.</p>
+</div>
+<div class="paragraph">
+<p>FRobot makes the part 3D. The sheet is 1 mm thick, or the thickness given in a GEO file, and the stack holds 5 parts. The part is shown folded, as the machine will bend it.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/first-3d-model.png" alt="The 3D model">
+</div>
+</div>
+<div class="paragraph">
+<p>You can change the thickness in the bottom bar: type it and press <strong>Enter</strong>. See <a href="10_part/13_thicknessandstack.html">Thickness, material and the stack</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_create_the_solution">4. Create the solution</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Workflow window now offers <strong>Pick &amp; Place Tech</strong>, with a blue glow. Click it.</p>
+</div>
+<div class="paragraph">
+<p>FRobot does the rest in a few seconds:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>It chooses a gripper that can hold the part, and says which in a toast, for example <strong>Gripper Vac_Grip chosen for 2Fold (3.53 kg): holds 3.8 kg</strong>.</p>
+</li>
+<li>
+<p>It places the stack on the pickup pallet.</p>
+</li>
+<li>
+<p>It plans the cycle: from Home to the pickup, to the centering table, to the deposit and back to Home.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The window is dimmed while it plans. Then the whole cell appears:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/first-solution.png" alt="The solution">
+</div>
+</div>
+<div class="paragraph">
+<p>Three things have changed:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>The tool rail</strong> now has the full set of tools.</p>
+</li>
+<li>
+<p><strong>The phase strip</strong> in the title bar shows one cell per phase: <strong>P</strong> (Pickup), <strong>C</strong> (Centering) and <strong>D1</strong> (Deposit).</p>
+</li>
+<li>
+<p><strong>The Workflow window</strong> shows the whole pipeline.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/workflow.png" alt="The Workflow window with a solution">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_check_the_cycle">5. Check the cycle</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Read the phase strip.</strong> Grey cells mean the phase is fine. A yellow cell has a warning and a red cell has an error; hover over a cell to read what is wrong. See <a href="20_cycle/22_thephasestrip.html">The phase strip</a>.</p>
+</li>
+<li>
+<p><strong>Watch the cycle.</strong> Move the mouse over the phase strip: a tray drops down with a scrubber and the transport buttons. Click <strong>Play</strong> (▷).</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/first-phase-tray.png" alt="The tray under the phase strip">
+</div>
+</div>
+</li>
+<li>
+<p><strong>Look at a phase closely.</strong> Click a phase cell. The robot goes to where that phase handles the part, and the <strong>Waypoints</strong> panel opens on that phase. See <a href="20_cycle/24_waypoints.html">Waypoints</a>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_6_write_the_robot_program">6. Write the robot program</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <strong>nc code</strong> on the rail.</p>
+</li>
+<li>
+<p>FRobot asks <strong>Generating NC Code</strong> … <strong>Do you want to generate code?</strong> Click <strong>Yes</strong>.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In this version the question always mentions collisions, even for a clean cycle. Rely on the phase strip instead: if every cell is grey, the cycle is clean.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>The <strong>Output NC</strong> window shows the progress. It writes <strong>Output\2Fold.rbc</strong> in the installation folder. If a post-processor is set up, it then runs it to make the FANUC program.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>See <a href="28_robotprogram/29_writingtheprogram.html">Writing the robot program</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_7_save_the_solution">7. Save the solution</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Choose <strong>File ▸ Save</strong>.</p>
+</li>
+<li>
+<p>The <strong>Save Solution</strong> dialog suggests the name <strong>2Fold.fr</strong>. Choose a folder of your own, not the Samples folder, and click <strong>Save</strong>. (Once a solution has a file, <strong>Save</strong> writes over it without asking.)</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>A toast confirms <strong>Solution saved: 2Fold.fr</strong>. The .fr file holds the cell, the part, the gripper and the whole cycle. Opening it later brings everything back exactly as it was, without planning again. See <a href="31_solutions.html">Solutions</a>.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Next:</strong> set up your own cell (<a href="4_cell/index.html">Setting up the cell</a>), or learn more about checking a cycle (<a href="20_cycle/21_creatingthesolution.html">Planning and checking the cycle</a>).</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_1_open_the_cell">1. Open the cell</a>
+  </li>
+  <li level="1">
+   <a href="#_2_open_the_part">2. Open the part</a>
+  </li>
+  <li level="1">
+   <a href="#_3_make_the_3d_model">3. Make the 3D model</a>
+  </li>
+  <li level="1">
+   <a href="#_4_create_the_solution">4. Create the solution</a>
+  </li>
+  <li level="1">
+   <a href="#_5_check_the_cycle">5. Check the cycle</a>
+  </li>
+  <li level="1">
+   <a href="#_6_write_the_robot_program">6. Write the robot program</a>
+  </li>
+  <li level="1">
+   <a href="#_7_save_the_solution">7. Save the solution</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="2_thescreen.html">The screen</a></span>
+ <span class="next"><a href="4_cell/index.html">Setting up the cell</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="res/index.js"></script>
+    <script src="res/files.js"></script>
+    <script src="res/site.js"></script>
+
+    
+</body>
+</html>

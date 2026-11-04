@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Obstacles</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="../1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="../2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="../3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Setting up the cell</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a class="active" href="8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../10_part/index.html">The part</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../10_part/11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../20_cycle/index.html">Planning and checking the cycle</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../20_cycle/21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="../28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="../32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="../33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="../34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Setting up the cell</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="8_obstacles.html">Obstacles</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Obstacles</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>FRobot keeps the robot, the gripper and the carried part clear of everything in the cell:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>every cell element;</p>
+</li>
+<li>
+<p>the parts already put down;</p>
+</li>
+<li>
+<p>the obstacle box, while it is shown;</p>
+</li>
+<li>
+<p>the collision triangles;</p>
+</li>
+<li>
+<p>STEP parts you import.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This page covers the last three, which you add for obstacles that are not cell elements.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_obstacle_box">The obstacle box</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>settings ▸ Obstacle Box</strong> opens its panel.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/obstacle.png" alt="The Obstacle Box panel">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>The box</strong> is a 200 mm cube. <strong>BX</strong>, <strong>BY</strong> and <strong>BZ</strong> set where its centre is.</p>
+</li>
+<li>
+<p><strong>Show obstacle box</strong> turns it on. It is an obstacle only while it is shown; it is drawn blue, and red when something hits it.</p>
+</li>
+<li>
+<p><strong>Saving:</strong> the box&#8217;s position is saved with the cell, but whether it is shown is not. A shown box stays shown, at the saved position, when you open another cell. After a restart it is off.</p>
+</li>
+<li>
+<p><strong>Planning:</strong> the phase strip re-checks the cycle when you move or show the box. To plan around the box, click <strong>recompute</strong>.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_collision_triangles">Collision triangles</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Triangles mark flat obstacles: a guard, a wall, a sloping surface. <strong>settings ▸ Collision Triangles</strong> opens their panel.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/triangles.png" alt="The Collision Triangles panel">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_adding_one">Adding one</h3>
+<div class="paragraph">
+<p><strong>Add Triangle…</strong> opens the <strong>Add Collision Triangle</strong> dialog. Fill it in and click <strong>OK</strong>:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Field</th>
+<th class="tableblock halign-left valign-top">What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The triangle&#8217;s name (needed)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Group</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A group name, pre-filled <strong>Box</strong>; triangles of a group share a colour. Empty becomes <strong>Group1</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>P1</strong>, <strong>P2</strong>, <strong>P3</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The three corners, each X, Y, Z in mm</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Export CSV</strong> in the dialog saves the triangle to a file.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_importing_many">Importing many</h3>
+<div class="paragraph">
+<p><strong>Import CSV…</strong> in the panel reads every row of a CSV file. Each row is one triangle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name,Group,P1X,P1Y,P1Z,P2X,P2Y,P2Z,P3X,P3Y,P3Z</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A row with 10 columns (no group) is read into the group <strong>Box</strong>. A file with no usable row gives <strong>No valid triangle rows found.</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_removing_one">Removing one</h3>
+<div class="paragraph">
+<p>The panel lists each triangle with its group. Its <strong>×</strong> removes it.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Collision triangles are not saved, neither with the cell nor with the solution. They stay in the 3D view, and keep counting as obstacles, in every cell and solution you open, until you remove them (×) or restart FRobot. Keep their CSV file to import them again.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_step_parts_as_obstacles">STEP parts as obstacles</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A STEP model of a fixture or a finished part can stand in the cell as an obstacle:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>settings ▸ Part ▸ Import Part…</strong>, or <strong>File ▸ Import ▸ STEP Geometry</strong>;</p>
+</li>
+<li>
+<p>then set its place in <strong>Part Placement (6 DOF)</strong>: <strong>PX</strong>, <strong>PY</strong>, <strong>PZ</strong> for the position and <strong>PRx</strong>, <strong>PRy</strong>, <strong>PRz</strong> for the rotation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>STEP parts are saved with the cell.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+A STEP part is only an obstacle; the robot never picks it. The part the robot handles always comes from a flat drawing (.dxf or .geo): see <a href="../10_part/11_importingthepart.html">Importing the part</a>.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_coordinates_of_obstacles">Coordinates of obstacles</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The obstacle box, the triangles and the STEP parts are placed in FRobot&#8217;s scene coordinates, measured from the foot of the robot&#8217;s base, not from the controller&#8217;s world origin.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Z</strong> is higher by the height of the robot&#8217;s second axis: 400 mm on the LR10iA_10, 425 mm on the M20iD_25, 565 mm on the M710iD_50M and FanucX.</p>
+</li>
+<li>
+<p><strong>On the M20iD_25</strong>, X and Y are also turned by 90°.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Check the position in the 3D view. Station frames, by contrast, are always in the controller&#8217;s world coordinates.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_the_obstacle_box">The obstacle box</a>
+  </li>
+  <li level="1">
+   <a href="#_collision_triangles">Collision triangles</a>
+  </li>
+  <li level="2">
+   <a href="#_adding_one">Adding one</a>
+  </li>
+  <li level="2">
+   <a href="#_importing_many">Importing many</a>
+  </li>
+  <li level="2">
+   <a href="#_removing_one">Removing one</a>
+  </li>
+  <li level="1">
+   <a href="#_step_parts_as_obstacles">STEP parts as obstacles</a>
+  </li>
+  <li level="1">
+   <a href="#_coordinates_of_obstacles">Coordinates of obstacles</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="7_framesandroles.html">Frames and roles</a></span>
+ <span class="next"><a href="9_cellconfigs.html">Cell configs</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Thickness, material and the stack</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="../1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="../2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="../3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../4_cell/index.html">Setting up the cell</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../4_cell/5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">The part</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a class="active" href="13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../20_cycle/index.html">Planning and checking the cycle</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../20_cycle/21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="../28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="../32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="../33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="../34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">The part</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="13_thicknessandstack.html">Thickness, material and the stack</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Thickness, material and the stack</h1>
+<div class="sect1">
+<h2 id="_thickness">Thickness</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The sheet thickness shows in the bottom bar once the 3D part exists, for example <strong>1 mm</strong>.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click it.</p>
+</li>
+<li>
+<p>Type the thickness and press <strong>Enter</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>FRobot rebuilds the part with that thickness. Leaving the box without <strong>Enter</strong> puts the old value back.</p>
+</div>
+<div class="paragraph">
+<p>With a solution open, the cycle is not planned again for the new thickness: click <strong>recompute</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_material">Material</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The material comes from the drawing and can&#8217;t be changed in FRobot: see <a href="11_importingthepart.html#material-and-weight">Importing the part</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_stack_on_the_pickup_pallet">The stack on the pickup pallet</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The parts come stacked on the pickup pallet. The stack&#8217;s height is the thickness times the number of parts.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A new 3D part starts with a stack of 5.</p>
+</li>
+<li>
+<p>Change the number with <strong>Layers</strong> in the <strong>Pickup</strong> panel, from 1 to 999: see <a href="14_thepickup.html">The pickup</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The robot always picks from the top of the stack. In a continuous run it takes the parts one after another: see <a href="../20_cycle/23_simulation.html">Simulation</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+When you open a cell config while a drawing is open but not yet made 3D, the part takes the thickness and stack stored in that cell config (or 1 mm and 5 parts). For a GEO part this replaces the file&#8217;s own thickness.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_solutions_name">The solution&#8217;s name</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The name in the bottom bar is the solution&#8217;s name:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>it starts as the drawing&#8217;s name;</p>
+</li>
+<li>
+<p>after you save, it is the solution file&#8217;s name.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To rename the solution:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the name, type the new one, and press <strong>Enter</strong> (or just leave the box).</p>
+</li>
+<li>
+<p>The next <strong>File ▸ Save</strong> writes the solution as <strong>&lt;new name&gt;.fr</strong>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the solution was saved before, it goes in the same folder, and the earlier file stays as it was. If a file with the new name exists, FRobot asks before replacing it.</p>
+</li>
+<li>
+<p>If it was never saved, the Save dialog opens with the new name filled in.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Renaming changes neither the drawing file nor the robot program: the program keeps the drawing&#8217;s name, <strong>Output\&lt;drawing name&gt;.rbc</strong>.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_thickness">Thickness</a>
+  </li>
+  <li level="1">
+   <a href="#_material">Material</a>
+  </li>
+  <li level="1">
+   <a href="#_the_stack_on_the_pickup_pallet">The stack on the pickup pallet</a>
+  </li>
+  <li level="1">
+   <a href="#_the_solutions_name">The solution&#8217;s name</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="12_the3dmodel.html">The 3D model</a></span>
+ <span class="next"><a href="14_thepickup.html">The pickup</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

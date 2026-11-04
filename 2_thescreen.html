@@ -1,0 +1,714 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="res/bento.css">
+  <link rel="stylesheet" href="res/site.css">
+  <link rel="stylesheet" href="res/tree.css">
+  <link rel="stylesheet" href="res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>The screen</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a class="active" href="2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="4_cell/index.html">Setting up the cell</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="4_cell/5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="10_part/index.html">The part</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="10_part/11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="10_part/12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="10_part/13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="10_part/14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="20_cycle/index.html">Planning and checking the cycle</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="20_cycle/21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="2_thescreen.html">The screen</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>The screen</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/solution.png" alt="The FRobot window with a solution">
+</div>
+</div>
+<div class="paragraph">
+<p>The window has five areas:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>The title bar</strong> at the top, with the menus and, once a cycle is planned, the phase strip.</p>
+</li>
+<li>
+<p><strong>The tool rail</strong> down the left side.</p>
+</li>
+<li>
+<p><strong>The 3D view</strong> in the middle.</p>
+</li>
+<li>
+<p><strong>The bottom bar.</strong></p>
+</li>
+<li>
+<p><strong>Floating panels</strong> that open over the 3D view when you need them.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_title_bar_and_the_menus">The title bar and the menus</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>On the left are the FRobot logo and the menus <strong>File</strong>, <strong>Edit</strong>, <strong>View</strong> and <strong>Help</strong>. <strong>Alt+F</strong>, <strong>Alt+E</strong>, <strong>Alt+V</strong> and <strong>Alt+H</strong> open them from the keyboard. On the right are <strong>Minimize</strong>, <strong>Maximize</strong> and <strong>Close</strong>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The menus show shortcuts such as Ctrl+O, Ctrl+S and F4, but in this version the shortcuts do not work. Use the menus or the tool rail. The keys that do work are listed in <a href="33_reference.html">Reference</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The menu items that work:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 25%;">
+<col style="width: 62.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Menu</th>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>New ▸ Create New Cell</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Starts an empty cell on a robot you choose: <a href="4_cell/5_newcell.html">A new cell</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens a solution (.fr), a cell config (.curl) or a part&#8217;s drawing (.dxf, .geo)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Save</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Saves the solution (.fr); before a solution exists, saves the cell as a cell config</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Save Cell Config</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Saves the cell under a name, for its robot: <a href="4_cell/9_cellconfigs.html">Cell configs</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Save As&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Saves the solution under a new name</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Import ▸ Gripper</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imports a gripper (a mesh with its .DAT file): <a href="15_gripper/18_importingagripper.html">Importing a gripper</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Import ▸ Cell Component</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imports a cell element from a STEP, STL or OBJ file: <a href="4_cell/6_addingstations.html">Adding stations</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Import ▸ STEP Geometry</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imports a STEP part as an obstacle: <a href="4_cell/8_obstacles.html">Obstacles</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Tools ▸ Post-Processor&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens <a href="28_robotprogram/30_machinedefaults.html">Machine Defaults</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Exit</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Closes FRobot; it asks first about unsaved solutions</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">File</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the two numbered rows</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The last two solutions or cell configs you opened or saved in this session (drawings are not listed)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">View</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Zoom Extents</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fits the whole cell into the 3D view</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">View</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Close All Windows</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hides every floating panel, including the Workflow window</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">View</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>World Frame</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shows or hides the world-frame axes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">View</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>TCP Legend</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shows which colour is which axis of the TCP: X red, Y green, Z blue</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Help</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Experimental Features&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diagnostic views and the planner switches: <a href="20_cycle/25_replanning.html">Re-planning</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Items that only show a "not in this prototype" message are listed in <a href="34_notavailableyet.html">Not available yet</a>.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_tool_rail">The tool rail</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The rail on the left holds FRobot&#8217;s tools. Which tools it shows depends on how far you are.</p>
+</div>
+<div class="paragraph">
+<p><strong>Before a solution exists:</strong></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/rail.png" alt="The rail before a solution">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 85.7143%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Button</th>
+<th class="tableblock halign-left valign-top">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>open</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens a solution, a cell config or a drawing (the same as <strong>File ▸ Open&#8230;&#8203;</strong>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>language</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not available yet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>measure</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measures between two points (appears once a part&#8217;s drawing is open): <a href="20_cycle/27_measuring.html">Measuring</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>workflow</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the Workflow window (appears once a part&#8217;s drawing is open)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>add</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adds cell items, machines, components or a part (appears for a new cell): <a href="4_cell/6_addingstations.html">Adding stations</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>jog</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Moves the robot by hand (appears for a new cell): <a href="4_cell/5_newcell.html#moving-the-robot-by-hand">A new cell</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>settings</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A menu: Tooling, Part, Frames, Output, Obstacle Box, Collision Triangles, Machine Defaults</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>database</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A menu: Robots (to switch robot), Grippers (the Gripper Database)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>info</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">About FRobot (see <a href="34_notavailableyet.html">Not available yet</a>)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Once a solution exists</strong> the rail changes to the full set:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/rail-solution.png" alt="The rail with a solution">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Button</th>
+<th class="tableblock halign-left valign-top">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>open</strong>, <strong>measure</strong>, <strong>settings</strong>, <strong>database</strong>, <strong>add</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">As above</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>recompute</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Plans the cycle again, with a planner you choose: <a href="20_cycle/25_replanning.html">Re-planning</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>workflow</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens or closes the Workflow window</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>nc code</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Writes the robot program: <a href="28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>display</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Chooses what the 3D view shows: <a href="#the-display-panel">Display</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>jog</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Moves the robot by hand</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>The button of an open tool is tinted blue. Clicking it again closes the tool.</p>
+</li>
+<li>
+<p><strong>add</strong>, <strong>settings</strong> and <strong>database</strong> open a small menu to the right. Click an entry, or <strong>Cancel</strong>.</p>
+</li>
+<li>
+<p>The <strong>‹</strong> at the top of the rail narrows it to icons only; <strong>›</strong> widens it again.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_3d_view">The 3D view</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">To</th>
+<th class="tableblock halign-left valign-top">Do this</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rotate the view</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Drag with the left mouse button, starting on empty background. Near a straight view (front, top …) it snaps to it.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Drag with the middle mouse button</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zoom</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Turn the mouse wheel; it zooms about the pointer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fit everything in view</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>View ▸ Zoom Extents</strong>, or <strong>Ctrl+E</strong> with the pointer over the 3D view</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Select something</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click it (a click never rotates the view)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clear the selection</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click on empty space without dragging</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stop a rotate or pan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Press <strong>Esc</strong> while dragging; the view stays where it is</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Clicking an object opens what belongs to it:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 42.8571%;">
+<col style="width: 57.1429%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">You click</th>
+<th class="tableblock halign-left valign-top">What opens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The part stack on the pickup pallet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The robot goes to the pickup and the <strong>Pickup</strong> panel opens: <a href="10_part/14_thepickup.html">The pickup</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The part on the centering table</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>Centering</strong> panel</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The folded part on the deposit or the Overturner (in a cell with a bending machine)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>Deposit</strong> or <strong>Regrip</strong> panel</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The gripper</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>Gripper</strong> panel: <a href="15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A cell element (pallet, table, machine …)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">It turns blue and the <strong>Frames</strong> panel opens beside it: <a href="4_cell/7_framesandroles.html">Frames and roles</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The small sphere at the TCP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>TCP Offset</strong> dialog: <a href="15_gripper/19_thetcp.html">The TCP</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An imported STEP part</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <strong>Part</strong> panel: <a href="4_cell/8_obstacles.html">Obstacles</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The obstacle box or a collision triangle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The robot moves to it</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>A selected part or gripper is drawn in orange.</p>
+</div>
+<div class="sect2">
+<h3 id="the-display-panel">The display panel</h3>
+<div class="paragraph">
+<p><strong>display</strong> on the rail (once a solution exists) opens switches for what the 3D view draws. Slide a switch right for on, left for off. These settings are not saved.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/display.png" alt="The Display panel">
+</div>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="the-bottom-bar">The bottom bar</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/bottom-bar.png" alt="The bottom bar">
+</div>
+</div>
+<div class="paragraph">
+<p>The bottom bar holds one block for each open solution: see <a href="31_solutions.html#several-solutions-at-once">Several solutions at once</a>. The active block shows the part and lets you change it:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>The part name.</strong> Type a new name and press <strong>Enter</strong>, or leave the box. It becomes the solution&#8217;s name: the next <strong>Save</strong> writes the solution under it. The robot program keeps the drawing&#8217;s name.</p>
+</li>
+<li>
+<p><strong>The thickness</strong> (once the 3D part exists). Type a value and press <strong>Enter</strong> to rebuild the part with that thickness. Leaving the box without Enter puts the old value back.</p>
+</li>
+<li>
+<p><strong>The robot</strong> (once a solution exists). Click it to open the robot selector: <a href="4_cell/5_newcell.html#switching-the-robot">A new cell</a>.</p>
+</li>
+<li>
+<p><strong>The ✕</strong> before the name closes that solution.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>mm</strong> at the right shows the unit. FRobot always works in millimetres.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_floating_panels">Floating panels</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Panels open over the 3D view. There are three kinds:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Settings panels</strong> (Jog, Tooling, Part, Frames, Output, Display, Obstacle Box, Collision Triangles).</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Only one is open at a time; opening another replaces it.</p>
+</li>
+<li>
+<p>Drag the header to move it, and close it with its round ✕.</p>
+</li>
+<li>
+<p>A click elsewhere puts it away.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Object panels</strong> (Pickup, Centering, Deposit, Regrip, Gripper) open where you clicked the object.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Pin to location</strong> keeps one open while you work elsewhere.</p>
+</li>
+<li>
+<p>The collapse button, or a double-click on the header, folds it to its header.</p>
+</li>
+<li>
+<p>Unless pinned, it closes when you click elsewhere.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Tool windows:</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Workflow</strong> and <strong>Waypoints</strong> stay open until you close them; for Workflow, clicking its rail button again also closes it.</p>
+</li>
+<li>
+<p><strong>Measure</strong> stays open while you measure.</p>
+</li>
+<li>
+<p><strong>Recompute</strong> and the <strong>Gripper Database</strong> close when you click elsewhere. The Gripper Database can be pinned.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_number_fields">Number fields</h3>
+<div class="paragraph">
+<p>In the panels, a number you type is not used until you press <strong>Enter</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>While you type, the field is marked as pending.</p>
+</li>
+<li>
+<p><strong>Enter</strong> applies every pending field of the panel together.</p>
+</li>
+<li>
+<p><strong>Esc</strong> throws the typed values away.</p>
+</li>
+<li>
+<p><strong>Tab</strong> and <strong>Shift+Tab</strong> move between the number fields.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The small up and down arrows, and the mouse wheel over a field, apply a step at once. Hold <strong>Shift</strong> for a smaller step.</p>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_messages">Messages</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>FRobot tells you what happened in five ways:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Toasts:</strong> a dark card at the bottom centre of the window for a few seconds, for example <strong>Solution saved: 2Fold.fr</strong>.</p>
+</li>
+<li>
+<p><strong>Dialogs</strong> for questions and warnings, such as <strong>Path planning — out of reach</strong>.</p>
+</li>
+<li>
+<p><strong>The phase strip</strong>, whose colours show the state of each phase of the cycle: <a href="20_cycle/22_thephasestrip.html">The phase strip</a>.</p>
+</li>
+<li>
+<p><strong>A status line</strong> in green at the foot of the <strong>Part</strong> and <strong>Frames</strong> panels, with the result of the last action.</p>
+</li>
+<li>
+<p><strong>Short notes</strong> in dark text at the bottom right of the 3D view, which fade after a few seconds.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>While a solution is being planned, the window is dimmed and a card at the bottom left says so: see <a href="20_cycle/21_creatingthesolution.html">Creating the solution</a>.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_the_title_bar_and_the_menus">The title bar and the menus</a>
+  </li>
+  <li level="1">
+   <a href="#_the_tool_rail">The tool rail</a>
+  </li>
+  <li level="1">
+   <a href="#_the_3d_view">The 3D view</a>
+  </li>
+  <li level="2">
+   <a href="#the-display-panel">The display panel</a>
+  </li>
+  <li level="1">
+   <a href="#the-bottom-bar">The bottom bar</a>
+  </li>
+  <li level="1">
+   <a href="#_floating_panels">Floating panels</a>
+  </li>
+  <li level="2">
+   <a href="#_number_fields">Number fields</a>
+  </li>
+  <li level="1">
+   <a href="#_messages">Messages</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="1_gettingstarted.html">Getting started</a></span>
+ <span class="next"><a href="3_firstprogram.html">Your first program</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="res/index.js"></script>
+    <script src="res/files.js"></script>
+    <script src="res/site.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Creating the solution</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="../1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="../2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="../3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../4_cell/index.html">Setting up the cell</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../4_cell/5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../10_part/index.html">The part</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../10_part/11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Planning and checking the cycle</a>
+   <ul>
+    <li><button class="tree blank"></button><a class="active" href="21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="../28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="../32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="../33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="../34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Planning and checking the cycle</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="21_creatingthesolution.html">Creating the solution</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Creating the solution</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>A <strong>solution</strong> is the part&#8217;s whole pick-and-place cycle in a cell: the gripper, and every move of the robot from Home, through each station, and back to Home.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_creating_it">Creating it</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once the 3D part exists, the Workflow window shows <strong>Pick &amp; Place Tech</strong>, with a blue glow. Click it.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>The gripper:</strong> FRobot chooses one for the part: see <a href="../15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a>.</p>
+</li>
+<li>
+<p><strong>The part:</strong> it places the stack on the pickup pallet.</p>
+</li>
+<li>
+<p><strong>The cycle:</strong> it plans every move of the robot, starting and ending at Home.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>While it plans, the window is dimmed and a card at the bottom left says <strong>Creating the solution …</strong>. The same card shows whenever the cycle is planned again. Planning usually takes a few seconds; a crowded cell can take up to a minute. Clicks and keys made meanwhile are ignored.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/busy.png" alt="Creating the solution">
+</div>
+</div>
+<div class="paragraph">
+<p>When it is done:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the whole cell is shown, with the stack on the pallet and the robot at Home;</p>
+</li>
+<li>
+<p>the phase strip appears in the title bar;</p>
+</li>
+<li>
+<p>the rail grows to the full set of tools.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Opening a cell config while a part is open creates the solution the same way.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Home matters: every cycle starts and ends there. Set it with <strong>jog ▸ Set Home</strong> before you plan: see <a href="../4_cell/5_newcell.html#moving-the-robot-by-hand">A new cell</a>.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_phases_and_their_waypoints">The phases and their waypoints</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The cycle is cut into <strong>phases</strong>, one per station. Each phase is a row of <strong>waypoints</strong>: the poses the robot passes through. Moves between waypoints are either <strong>joint moves</strong> (J), where each axis turns by the shortest way, or <strong>linear moves</strong> (L), where the TCP goes in a straight line.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 6.6666%;">
+<col style="width: 13.3333%;">
+<col style="width: 80.0001%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Phase</th>
+<th class="tableblock halign-left valign-top">When</th>
+<th class="tableblock halign-left valign-top">Waypoints in order</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>P</strong> Pickup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">always</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Home</strong>, <strong>PickApproach</strong> (at least 50 mm above the stack), <strong>PickHeight</strong>, <strong>PickContact</strong> (the gripper takes the part), <strong>PickLift</strong>, <strong>PickRetract</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>C</strong> Centering</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">with a centering table</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>CenDropApproach</strong>, <strong>CenDropPos</strong> (the part is released and slides into the corner), <strong>CenDropRetract</strong>, <strong>CenPickApproach</strong>, <strong>CenPartContact</strong> (the part is taken again), <strong>CenPartLift</strong>, <strong>CenRetract</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>L</strong> Loading</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">with a machine</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>LoadApproach</strong>, <strong>LoadPartPos</strong> (the part is put on the bed), <strong>LoadRetract</strong>, <strong>FoldWait</strong> (the machine bends the part). Where the machine blocks a straight set-down, <strong>LoadFeed</strong> and <strong>LoadSlide</strong> (and <strong>LoadLiftOff</strong>, <strong>LoadSlideOut</strong>) are added.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>U</strong> Unloading</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">with a machine and a Deposit station</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>UnloadApproach</strong>, <strong>UnloadPick</strong> (the bent part is taken), <strong>UnloadLift</strong>, <strong>UnloadRetract</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>R</strong> Regrip</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">with a machine, a Deposit station and an Overturner, when <strong>Flip part</strong> is ticked in the Deposit panel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>RegripApproach</strong>, <strong>RegripPlace</strong> (the part is left on the Overturner), <strong>RegripRetract</strong>, <strong>RegripEnter</strong>, <strong>RegripBehind</strong>, <strong>RegripPick</strong> (taken from the other side), <strong>RegripLift</strong>, <strong>RegripSlideOut</strong>, <strong>RegripAway</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>D</strong> Deposit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">with a Deposit station</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>DropApproach</strong>, <strong>DropPartPos</strong> (the part is put down), <strong>DropRetract</strong>, <strong>Home</strong></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Without a Deposit station, a cell with a machine ends after the bend, and the phase strip reports that the part stays on the machine bed.</p>
+</div>
+<div class="paragraph">
+<p>Between the stations the robot swings with joint moves. The routing points of a swing are hidden, apart from those named <strong>TransitionSafe</strong> (one at the top of each bend of the swing).</p>
+</div>
+<div class="sect2">
+<h3 id="_how_frobot_plans">How FRobot plans</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Near a station</strong> the robot moves in straight lines: down to where it takes or leaves the part, and up again afterwards.</p>
+</li>
+<li>
+<p><strong>Retracts</strong> (the moves up and away) are at least 120 mm, longer where the part needs more room.</p>
+</li>
+<li>
+<p><strong>Swings</strong> between stations keep clear of the cell.</p>
+</li>
+<li>
+<p><strong>Clearance:</strong> FRobot keeps the arm, the gripper and the part 40 mm from elements with the role <strong>Other</strong> where there is room, and never closer than 10 mm. It keeps 10 mm from the Overturner. See <a href="26_collisions.html">Collisions and clearance</a>.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="when-the-plan-has-problems">When the plan has problems</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>FRobot always produces a cycle, even when part of it is not right. It shows what is wrong:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Out of reach.</strong> A dialog <strong>Path planning — out of reach</strong> lists each waypoint the robot can&#8217;t reach within its joint limits, for example <strong>Pickup · PickContact: out of reach — J5 130.0° above max 125°</strong>. It ends: <strong>Move the station closer / lower the stack, or reposition the robot, then regenerate.</strong> The cycle is kept as a preview.</p>
+</li>
+<li>
+<p><strong>Collisions</strong> the planner could not avoid: the phase cells turn red. See <a href="22_thephasestrip.html">The phase strip</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>What you can do:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 28.5714%;">
+<col style="width: 71.4286%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Problem</th>
+<th class="tableblock halign-left valign-top">Try</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A station is out of reach</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Move the station or the robot (<a href="../4_cell/7_framesandroles.html">Frames and roles</a>), lower the stack, then click <strong>recompute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The grip makes the wrist turn too far</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Next heading</strong> in the Pickup panel: <a href="../10_part/14_thepickup.html">The pickup</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A swing collides</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>recompute</strong> with an RRT planner: <a href="25_replanning.html">Re-planning</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">One pose is slightly off</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Edit that waypoint: <a href="24_waypoints.html">Waypoints</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_starting_over">Starting over</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Ctrl+click</strong> on <strong>Pick &amp; Place Tech</strong> discards the solution and keeps the 3D part. Click <strong>Pick &amp; Place Tech</strong> again to plan from scratch.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+A plain click on <strong>Pick &amp; Place Tech</strong> when a solution already exists does nothing, though its tooltip says "Re-simulate". To plan again, use <strong>recompute</strong>.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The planner chosen in <strong>recompute</strong> stays for every plan in the session, this one included: see <a href="25_replanning.html">Re-planning</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_creating_it">Creating it</a>
+  </li>
+  <li level="1">
+   <a href="#_the_phases_and_their_waypoints">The phases and their waypoints</a>
+  </li>
+  <li level="2">
+   <a href="#_how_frobot_plans">How FRobot plans</a>
+  </li>
+  <li level="1">
+   <a href="#when-the-plan-has-problems">When the plan has problems</a>
+  </li>
+  <li level="1">
+   <a href="#_starting_over">Starting over</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="index.html">Planning and checking the cycle</a></span>
+ <span class="next"><a href="22_thephasestrip.html">The phase strip</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

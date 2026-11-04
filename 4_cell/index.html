@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Setting up the cell</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="../1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="../2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="../3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a class="active" href="index.html">Setting up the cell</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../10_part/index.html">The part</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../10_part/11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../20_cycle/index.html">Planning and checking the cycle</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../20_cycle/21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="../28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="../32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="../33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="../34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Setting up the cell</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Setting up the cell</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>A cell is the robot and everything around it: the pallet the parts come from, the stations they visit, and any other fixtures. FRobot plans the robot&#8217;s moves between the stations and keeps clear of everything else.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_robot">The robot</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>FRobot works with FANUC 6-axis robots. These ship with it:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Robot</th>
+<th class="tableblock halign-left valign-top">Payload</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>LR10iA_10</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10 kg</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>M20iD_25</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25 kg</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>M710iD_50M</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50 kg</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>FanucX</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a demonstration robot without a payload limit</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The payload counts when FRobot chooses a gripper: the part plus the gripper must not be heavier than the robot can carry.</p>
+</div>
+<div class="paragraph">
+<p>Each robot has its own cell configs. The one named <strong>Default</strong> is loaded when FRobot starts on that robot. FanucX and M710iD_50M ship without a Default config.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="stations-and-roles">Stations and roles</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Every cell element has a <strong>role</strong>. The role tells FRobot what the robot does there:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 75%;">
+<col style="width: 12.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Role</th>
+<th class="tableblock halign-left valign-top">What the robot does there</th>
+<th class="tableblock halign-left valign-top">Phase in the cycle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Pickup</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Picks the part from the top of the stack. It must be a pallet: see below.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>P</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Centering Table</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Puts the part down, so it slides into the table&#8217;s corner, and picks it up again: the part&#8217;s position is then known exactly.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>C</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Deposit</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Puts the part down, one place after another in a grid.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>D</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Overturner</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Puts the part down and picks it up from the other side, when it has to be turned over: in a cell with a bending machine, when <strong>Flip part</strong> is ticked in the Deposit panel.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>R</strong> (regrip)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Other</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nothing: an obstacle the robot keeps clear of.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Double-Sheet Detector</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nothing yet: an obstacle.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Tool Changer</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nothing yet: an obstacle.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>A <strong>machine</strong> from the machine library is a station of its own. If it has a bed, the robot loads the part onto it (<strong>L</strong>), waits while it is bent, and unloads it (<strong>U</strong>).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Only a <strong>pallet</strong> can be the pickup: a FlexCell Pallet or Pallet V2 from the library, or your own component with a <strong>Type=Pallet</strong> .ini file. FRobot uses the first pallet with the role Pickup, otherwise the first pallet of any role. Giving another element the role Pickup does not make it a pickup.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_station_user_frames">Station user frames</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Each element sits at its <strong>station user frame</strong>: a position X, Y, Z and a rotation W, P, R, as a FANUC controller would hold them, measured in the robot&#8217;s world frame. The frame is the element&#8217;s placement: change the frame and the element moves.</p>
+</div>
+<div class="paragraph">
+<p>The world frame&#8217;s origin lies on the robot&#8217;s first axis, at the height of its second axis, as on the FANUC controller. Frames are drawn as red, green and blue axes (X, Y, Z):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the <strong>Display</strong> panel&#8217;s switches show or hide the world frame and the station frames;</p>
+</li>
+<li>
+<p><strong>View ▸ World Frame</strong> shows or hides the world frame only.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_in_this_chapter">In this chapter</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="5_newcell.html">A new cell</a>: starting a cell, choosing and switching the robot, moving it by hand, Home.</p>
+</li>
+<li>
+<p><a href="6_addingstations.html">Adding stations</a>: library items, machines and your own components.</p>
+</li>
+<li>
+<p><a href="7_framesandroles.html">Frames and roles</a>: placing elements and giving them their role.</p>
+</li>
+<li>
+<p><a href="8_obstacles.html">Obstacles</a>: the obstacle box, collision triangles and STEP parts.</p>
+</li>
+<li>
+<p><a href="9_cellconfigs.html">Cell configs</a>: saving a cell and opening it again.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_the_robot">The robot</a>
+  </li>
+  <li level="1">
+   <a href="#stations-and-roles">Stations and roles</a>
+  </li>
+  <li level="1">
+   <a href="#_station_user_frames">Station user frames</a>
+  </li>
+  <li level="1">
+   <a href="#_in_this_chapter">In this chapter</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="../3_firstprogram.html">Your first program</a></span>
+ <span class="next"><a href="5_newcell.html">A new cell</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

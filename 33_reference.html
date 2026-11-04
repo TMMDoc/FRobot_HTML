@@ -1,0 +1,603 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="res/bento.css">
+  <link rel="stylesheet" href="res/site.css">
+  <link rel="stylesheet" href="res/tree.css">
+  <link rel="stylesheet" href="res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Reference</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="4_cell/index.html">Setting up the cell</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="4_cell/5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="10_part/index.html">The part</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="10_part/11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="10_part/12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="10_part/13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="10_part/14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="20_cycle/index.html">Planning and checking the cycle</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="20_cycle/21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a class="active" href="33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="33_reference.html">Reference</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Reference</h1>
+<div class="sect1">
+<h2 id="_keys_and_mouse">Keys and mouse</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_in_the_3d_view">In the 3D view</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Action</th>
+<th class="tableblock halign-left valign-top">How</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rotate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Left-drag, starting on empty background</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Middle-drag</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zoom about the pointer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mouse wheel</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Select</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Left-click an object</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clear the selection</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Left-click empty space</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stop a rotate or pan where it is</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Esc</strong> while dragging</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fit everything in view</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ctrl+E</strong> with the pointer over the 3D view, or <strong>View ▸ Zoom Extents</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_anywhere">Anywhere</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 40%;">
+<col style="width: 60%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key</th>
+<th class="tableblock halign-left valign-top">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>W</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the Waypoints panel (not while typing in a field)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Alt+F</strong>, <strong>Alt+E</strong>, <strong>Alt+V</strong>, <strong>Alt+H</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open the File, Edit, View and Help menus</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Alt+F4</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Closes FRobot, asking first about unsaved solutions</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ctrl</strong>+click on <strong>Pick &amp; Place Tech</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Discards the solution and keeps the 3D part</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_in_panels_and_dialogs">In panels and dialogs</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key</th>
+<th class="tableblock halign-left valign-top">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Enter</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Applies the typed numbers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Esc</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Throws the typed numbers away</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Tab</strong>, <strong>Shift+Tab</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Next or previous number field</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Shift</strong> + an arrow beside a field</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A smaller step</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Esc</strong> or <strong>Enter</strong> in a dialog card</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Closes it as <strong>Cancel</strong> / <strong>No</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Double-click the header of a small panel (Waypoints, Gripper, Pickup, Centering, Deposit, Regrip)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Folds or unfolds the panel</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Apart from Ctrl+E, the shortcuts shown in the menus (Ctrl+O, Ctrl+S, Ctrl+Z, F4, F1 …) do not work in this version.</p>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_file_types">File types</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 28.5714%;">
+<col style="width: 42.8571%;">
+<col style="width: 14.2858%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">File</th>
+<th class="tableblock halign-left valign-top">What it is</th>
+<th class="tableblock halign-left valign-top">Open with</th>
+<th class="tableblock halign-left valign-top">Saved by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>.fr</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A solution: cell, part, gripper and cycle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>File ▸ Open&#8230;&#8203;</strong>, the recent files, double-click</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>File ▸ Save</strong>, <strong>Save As&#8230;&#8203;</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>.curl</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A cell config</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>File ▸ Open&#8230;&#8203;</strong>, the robot selector</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>File ▸ Save Cell Config</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>.dxf</strong>, <strong>.geo</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A part&#8217;s flat drawing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>File ▸ Open&#8230;&#8203;</strong>, <strong>add ▸ 2D Sheet (DXF / GEO)</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>.step</strong>, <strong>.stp</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A STEP model: a cell element or an obstacle part</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>add ▸ Cell Component (File)</strong>, <strong>settings ▸ Part ▸ Import Part…</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>.stl</strong>, <strong>.obj</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A mesh: a gripper (with its .DAT) or a cell element</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>File ▸ Import ▸ Gripper</strong>, <strong>add ▸ Cell Component (File)</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>.DAT</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A gripper&#8217;s data: its cups or TCP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">read with the gripper&#8217;s mesh</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>.ini</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A cell component&#8217;s data: <strong>Type=Pallet</strong> and its height</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">read with the component&#8217;s mesh</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>.csv</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Collision triangles</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>settings ▸ Collision Triangles ▸ Import CSV…</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Export CSV</strong> in the triangle dialog</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>.rbc</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The robot program</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>nc code</strong>, <strong>Post-process</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>.LS</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The FANUC program</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RobotPost, after <strong>nc code</strong> or <strong>Post-process</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>.fcell</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An old cell format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no longer opens</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="folders-and-settings-files">Folders and settings files</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the installation folder (normally <strong>C:\Metamation\FRobot</strong>):</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 40%;">
+<col style="width: 60%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Folder</th>
+<th class="tableblock halign-left valign-top">What it holds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>CellConfigs\&lt;robot&gt;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The cell configs of each robot; <strong>Default.curl</strong> loads at start</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Output</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The robot programs (.rbc)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>grippers</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The gripper catalog, the cup types and the priorities</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>robots</strong>, <strong>CellItems</strong>, <strong>Machines</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The robot models and the libraries</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Samples</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The sample files</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>In <strong>Bin</strong>, next to FRobot.exe:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">File</th>
+<th class="tableblock halign-left valign-top">What it remembers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>robot.sel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The robot you used last</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>robot_defaults.json</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Home, the TCP and the mounted tool</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>panels.cfg</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Where you left the panels</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>postproc.cfg</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The post-processor&#8217;s location</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>machine.cfg</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The RBC format switch</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Parts kept inside solutions are unpacked to <strong>%LOCALAPPDATA%\FRobot\Parts</strong> when a solution opens.</p>
+</div>
+<div class="paragraph">
+<p>Not remembered between sessions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the Display switches;</p>
+</li>
+<li>
+<p>the World Frame tick;</p>
+</li>
+<li>
+<p>the rail&#8217;s width;</p>
+</li>
+<li>
+<p>the recent files;</p>
+</li>
+<li>
+<p>the planner choice;</p>
+</li>
+<li>
+<p>the experimental switches.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_glossary">Glossary</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Term</th>
+<th class="tableblock halign-left valign-top">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Cell</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The robot and everything around it</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Cell config</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A saved cell (.curl), kept per robot</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Cell element</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A station or fixture in the cell</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Continuous run</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Playing every part of the stack onto the deposit, place after place</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Cycle</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The robot&#8217;s moves for one part, from Home and back to Home</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Deposit grid</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The places on a Deposit station that parts are put down on, one after another</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Flange</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The robot&#8217;s last face, where the gripper is mounted</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Home</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The pose every cycle starts and ends at</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Joint move (J, PTP)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A move where each axis turns its own shortest way</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Linear move (L, LIN)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A move where the TCP goes in a straight line</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Overturner</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A station where the part is put down and picked up from its other side</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Phase</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The part of the cycle at one station: P, C, L, U, R or D</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Phase strip</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The row of phase cells in the title bar</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Regrip</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Taking the part again with another grip, at the Overturner</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Role</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">What a cell element is for: Pickup, Deposit, Centering Table …</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>RRT</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A sampling search that finds a way round an obstacle where the rules can&#8217;t</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Singularity</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A pose where two wrist axes line up and the robot moves badly</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Solution</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A part&#8217;s whole cycle in a cell, with its gripper; saved as .fr</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Station user frame</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An element&#8217;s position and rotation (X, Y, Z, W, P, R) in the robot&#8217;s world frame</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>TCP</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tool centre point: the point of the gripper the program moves</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Waypoint</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">One pose of the robot in the cycle</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>World frame</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The robot&#8217;s base coordinate system</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_keys_and_mouse">Keys and mouse</a>
+  </li>
+  <li level="2">
+   <a href="#_in_the_3d_view">In the 3D view</a>
+  </li>
+  <li level="2">
+   <a href="#_anywhere">Anywhere</a>
+  </li>
+  <li level="2">
+   <a href="#_in_panels_and_dialogs">In panels and dialogs</a>
+  </li>
+  <li level="1">
+   <a href="#_file_types">File types</a>
+  </li>
+  <li level="1">
+   <a href="#folders-and-settings-files">Folders and settings files</a>
+  </li>
+  <li level="1">
+   <a href="#_glossary">Glossary</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="32_troubleshooting.html">Troubleshooting</a></span>
+ <span class="next"><a href="34_notavailableyet.html">Not available yet</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="res/index.js"></script>
+    <script src="res/files.js"></script>
+    <script src="res/site.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Writing the robot program</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="../1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="../2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="../3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../4_cell/index.html">Setting up the cell</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../4_cell/5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../10_part/index.html">The part</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../10_part/11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../20_cycle/index.html">Planning and checking the cycle</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../20_cycle/21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="../20_cycle/27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">The robot program</a>
+   <ul>
+    <li><button class="tree blank"></button><a class="active" href="29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="../32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="../33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="../34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">The robot program</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="29_writingtheprogram.html">Writing the robot program</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Writing the robot program</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>FRobot writes the cycle as a robot program in its own format, <strong>.rbc</strong>. A post-processor (RobotPost) then turns the .rbc into a FANUC program (.LS) for the controller.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_two_ways_to_write_it">Two ways to write it</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_nc_code_on_the_rail">nc code on the rail</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <strong>nc code</strong>.</p>
+</li>
+<li>
+<p>FRobot asks <strong>Generating NC Code</strong> … <strong>Do you want to generate code?</strong> Click <strong>Yes</strong> to write the program, or <strong>No</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/nc-confirm.png" alt="Generating NC Code">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+In this version the question always says there are collisions or other issues, even when the cycle is clean. Check the phase strip before you click <strong>Yes</strong>: when every cell is grey, the cycle is clean.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_post_process_in_the_workflow_window">Post-process in the Workflow window</h3>
+<div class="paragraph">
+<p>Click <strong>Post-process</strong> in the Workflow window. It writes the program at once, without asking.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>The Complete step:</strong> below <strong>Post-process</strong> a <strong>Complete</strong> step appears with the program&#8217;s file name. Click it to open the .rbc file, or to show it in Explorer.</p>
+</li>
+<li>
+<p><strong>A failed write:</strong> the step appears before the program is written, so check the Output NC window for the result.</p>
+</li>
+<li>
+<p><strong>A moved file:</strong> if the file has gone, FRobot says so.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>nc code</strong> on the rail does not add the Complete step.</p>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_while_it_writes">While it writes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>Output NC</strong> window shows the progress, then closes by itself after a few seconds:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Message</th>
+<th class="tableblock halign-left valign-top">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Writing NC program…  n / N waypoints</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Writing the .rbc</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>NC file written:</strong> <em>path</em> / <strong>Running post-processor…</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The .rbc is done; RobotPost is running</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>✔ Post-processed → …\A_&lt;part&gt;.LS</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The FANUC program is ready</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>✔ Post-processor finished (exit 0).</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RobotPost ran without error</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>✖ Post-processor exited with code N.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RobotPost reported an error</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>✖ Post-processor not found:</strong> <em>path</em> <strong>Set it in Settings ▸ Machine Defaults.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tell FRobot where RobotPost is: <a href="30_machinedefaults.html">Machine Defaults</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>✖ Write failed: …</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The .rbc could not be written, for example because the folder is read-only</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Before writing, FRobot does two things:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>it switches off the continuous run, because the program is a single cycle;</p>
+</li>
+<li>
+<p>it stops a post-processor that is still running from an earlier write.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="where-the-files-go">Where the files go</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">File</th>
+<th class="tableblock halign-left valign-top">Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The .rbc program</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Output\&lt;drawing&gt;.rbc</strong> in the installation folder, named after the part&#8217;s drawing file (not a name typed in the bottom bar). An existing file of that name is replaced without asking.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The FANUC programs (.LS)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Next to <strong>RobotPost.exe</strong>, in a folder named after the part</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>With the new RBC format switched on in <a href="30_machinedefaults.html">Machine Defaults</a>, FRobot writes the .rbc in that format and does not run the post-processor.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_the_program_holds">What the program holds</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Waypoints:</strong> the program holds the named waypoints of the cycle, the <strong>TransitionSafe</strong> points of the swings included. Between them the controller&#8217;s joint moves repeat the swings you saw in the simulation.</p>
+</li>
+<li>
+<p><strong>Home</strong> is written at the start and the end, as <strong>StartHome</strong> and <strong>EndHome</strong> (<strong>Start Home</strong> and <strong>Drop Home</strong> in the new RBC format).</p>
+</li>
+<li>
+<p><strong>Speeds and blending</strong> (corner rounding) are not written; set them on the controller.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_two_ways_to_write_it">Two ways to write it</a>
+  </li>
+  <li level="2">
+   <a href="#_nc_code_on_the_rail">nc code on the rail</a>
+  </li>
+  <li level="2">
+   <a href="#_post_process_in_the_workflow_window">Post-process in the Workflow window</a>
+  </li>
+  <li level="1">
+   <a href="#_while_it_writes">While it writes</a>
+  </li>
+  <li level="1">
+   <a href="#where-the-files-go">Where the files go</a>
+  </li>
+  <li level="1">
+   <a href="#_what_the_program_holds">What the program holds</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="index.html">The robot program</a></span>
+ <span class="next"><a href="30_machinedefaults.html">Machine Defaults</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

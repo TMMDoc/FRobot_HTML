@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="res/bento.css">
+  <link rel="stylesheet" href="res/site.css">
+  <link rel="stylesheet" href="res/tree.css">
+  <link rel="stylesheet" href="res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Troubleshooting</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="4_cell/index.html">Setting up the cell</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="4_cell/5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="4_cell/9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="10_part/index.html">The part</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="10_part/11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="10_part/12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="10_part/13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="10_part/14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="20_cycle/index.html">Planning and checking the cycle</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="20_cycle/21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="20_cycle/27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a class="active" href="32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="32_troubleshooting.html">Troubleshooting</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Troubleshooting</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Some actions report only in FRobot&#8217;s status line, which shows at the foot of the <strong>Part</strong> and <strong>Frames</strong> panels. If a click seems to do nothing, open <strong>settings ▸ Part</strong> and read the green line at the bottom.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_messages">Messages</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 31.25%;">
+<col style="width: 31.25%;">
+<col style="width: 37.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">You see</th>
+<th class="tableblock halign-left valign-top">It means</th>
+<th class="tableblock halign-left valign-top">What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Path planning — out of reach</strong>, listing waypoints such as <strong>Pickup · PickContact: out of reach — J5 … above max …</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The robot can&#8217;t reach those waypoints within its joint limits</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Move the station closer, lower the stack or move the robot, then <strong>recompute</strong>. See <a href="20_cycle/21_creatingthesolution.html#when-the-plan-has-problems">Creating the solution</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A red cell in the phase strip</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An error in that phase: a collision, or a pose out of reach</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hover the cell to read it: <a href="20_cycle/22_thephasestrip.html#reading-the-problems">The phase strip</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A yellow cell in the phase strip</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A warning: close to a joint limit or the wrist singularity, or a swing within 10 mm of an element with the role Other or of the Overturner</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Check it in the simulation; often it can stay</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>No grippers found for … : reason. … kept</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No gripper in the catalog can hold this part</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Check the reason: the part too heavy, too small or too holed. Import a suitable gripper: <a href="15_gripper/18_importingagripper.html">Importing a gripper</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Import a sheet on a pickup pallet, then generate the cycle.</strong> (status line)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Pick &amp; Place Tech</strong> found no pallet in the cell</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Add a pallet (only a pallet can be the pickup): <a href="4_cell/6_addingstations.html">Adding stations</a>. On a new installation, open a cell config first: FRobot starts on FanucX, whose cell is empty.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Build the pick-&amp;-place solution first (Pick &amp; Place Tech).</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Post-process</strong> was clicked without a solution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Create the solution first</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>No waypoints to edit — generate a cycle first.</strong> (status line)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>W</strong> was pressed without a solution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Create the solution first</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>✖ Post-processor not found: … Set it in Settings ▸ Machine Defaults.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RobotPost isn&#8217;t where FRobot looks for it</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="28_robotprogram/30_machinedefaults.html">Machine Defaults</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Import a gripper mesh with a paired .DAT (it defines the cups / TCP)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A gripper mesh was imported without its .DAT file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Put the .DAT next to the mesh, with the same name</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The view is empty after <strong>3D Model</strong>; <strong>'file' has no closed profile to extrude</strong> (status line)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The drawing has no closed outline</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Close the outline in your CAD program; click <strong>2D Part</strong> to see the drawing again</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>⚠ Cell elements overlap: A ↔ B</strong> (status line), elements drawn red</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Two cell elements take up the same space</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Move one of them in the Frames panel</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>… files are no longer supported — open a solution (.fr) or a cell config (.curl)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The file type can&#8217;t be opened, for example an old .fcell</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open a .fr, .curl, .dxf or .geo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open solution failed: …</strong> or <strong>Not a solution file</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The .fr file is damaged or not from FRobot</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use another copy of the file</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>FRobot encountered a problem</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An unexpected error. In this version it shows for <strong>About FRobot</strong>, and may show when you close the TCP Offset or Add Collision Triangle dialog.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click <strong>OK</strong>; FRobot carries on. If it happens elsewhere, note what you did.</p></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_things_that_seem_wrong">Things that seem wrong</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 30.7692%;">
+<col style="width: 38.4615%;">
+<col style="width: 30.7693%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">You notice</th>
+<th class="tableblock halign-left valign-top">Why</th>
+<th class="tableblock halign-left valign-top">What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The view is empty after starting</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The robot and cell are loaded but hidden until you open a cell config or a solution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open a cell config, or a part and create its solution</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A Pickup role on my fixture does nothing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Only a pallet can be the pickup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use a library pallet, or give your component a <strong>Type=Pallet</strong> .ini</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">My gripper changed after opening a cell config or switching the robot</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The config brings its own gripper, or FRobot chose again</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pick the gripper again: <a href="15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The phase strip still shows the old colours after a gripper, TCP, thickness or station change</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Those changes don&#8217;t re-plan or re-check the cycle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click <strong>recompute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>add</strong> is missing from the rail</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>add</strong> shows for a new cell and once a solution exists</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use <strong>File ▸ Import ▸ Cell Component</strong>, or create the solution first</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The robot isn&#8217;t shown in the bottom bar</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">It shows once a solution exists</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use <strong>database ▸ Robots</strong> to switch the robot</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">My edited waypoints are gone</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Something planned the cycle again (recompute, a pickup or grip change, Next heading)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Edit waypoints last; see <a href="20_cycle/24_waypoints.html">Waypoints</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A moved station has not changed the cycle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Moving a station doesn&#8217;t re-plan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click <strong>recompute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The obstacle box is no longer avoided</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">It is an obstacle only while shown, and showing it isn&#8217;t saved</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tick <strong>Show obstacle box</strong> again</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The collision triangles are gone, or still there in another cell</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Triangles are not saved, and they stay until you remove them or restart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Import them again from their CSV file, or remove them with <strong>×</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A cell config is missing a station</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">It uses a library item, machine or file that isn&#8217;t on this PC; a short note at the bottom right of the 3D view said so</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Install the item, or replace the station</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The tray under the phase strip disappeared</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">It hides while another program is in front</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click into FRobot</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ctrl+S, Ctrl+O and the other menu shortcuts do nothing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not wired up in this version (Ctrl+E works, over the 3D view)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use the menus; see <a href="34_notavailableyet.html">Not available yet</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_messages">Messages</a>
+  </li>
+  <li level="1">
+   <a href="#_things_that_seem_wrong">Things that seem wrong</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="31_solutions.html">Solutions</a></span>
+ <span class="next"><a href="33_reference.html">Reference</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="res/index.js"></script>
+    <script src="res/files.js"></script>
+    <script src="res/site.js"></script>
+
+    
+</body>
+</html>

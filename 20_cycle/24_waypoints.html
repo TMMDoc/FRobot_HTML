@@ -1,0 +1,413 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Waypoints</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>FROBOT USER MANUAL</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">FRobot User Manual</a></li>
+  <li><button class="tree blank"></button><a href="../1_gettingstarted.html">Getting started</a></li>
+  <li><button class="tree blank"></button><a href="../2_thescreen.html">The screen</a></li>
+  <li><button class="tree blank"></button><a href="../3_firstprogram.html">Your first program</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../4_cell/index.html">Setting up the cell</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../4_cell/5_newcell.html">A new cell</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/6_addingstations.html">Adding stations</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/7_framesandroles.html">Frames and roles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/8_obstacles.html">Obstacles</a></li>
+    <li><button class="tree blank"></button><a href="../4_cell/9_cellconfigs.html">Cell configs</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../10_part/index.html">The part</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../10_part/11_importingthepart.html">Importing the part</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/12_the3dmodel.html">The 3D model</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/13_thicknessandstack.html">Thickness, material and the stack</a></li>
+    <li><button class="tree blank"></button><a href="../10_part/14_thepickup.html">The pickup</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../15_gripper/index.html">The gripper</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../15_gripper/16_howthegripperischosen.html">How the gripper is chosen</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/17_choosingagripper.html">Choosing a gripper yourself</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/18_importingagripper.html">Importing a gripper</a></li>
+    <li><button class="tree blank"></button><a href="../15_gripper/19_thetcp.html">The TCP</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Planning and checking the cycle</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="21_creatingthesolution.html">Creating the solution</a></li>
+    <li><button class="tree blank"></button><a href="22_thephasestrip.html">The phase strip</a></li>
+    <li><button class="tree blank"></button><a href="23_simulation.html">Simulation</a></li>
+    <li><button class="tree blank"></button><a class="active" href="24_waypoints.html">Waypoints</a></li>
+    <li><button class="tree blank"></button><a href="25_replanning.html">Re-planning</a></li>
+    <li><button class="tree blank"></button><a href="26_collisions.html">Collisions and clearance</a></li>
+    <li><button class="tree blank"></button><a href="27_measuring.html">Measuring</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../28_robotprogram/index.html">The robot program</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../28_robotprogram/29_writingtheprogram.html">Writing the robot program</a></li>
+    <li><button class="tree blank"></button><a href="../28_robotprogram/30_machinedefaults.html">Machine Defaults</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../31_solutions.html">Solutions</a></li>
+  <li><button class="tree blank"></button><a href="../32_troubleshooting.html">Troubleshooting</a></li>
+  <li><button class="tree blank"></button><a href="../33_reference.html">Reference</a></li>
+  <li><button class="tree blank"></button><a href="../34_notavailableyet.html">Not available yet</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Planning and checking the cycle</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="24_waypoints.html">Waypoints</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Waypoints</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>Waypoints</strong> panel shows the waypoints of one phase and lets you change them, one at a time.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_opening_it">Opening it</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are several ways:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>click a phase cell in the phase strip: the panel shows that phase;</p>
+</li>
+<li>
+<p>press <strong>W</strong> (when you are not typing in a field);</p>
+</li>
+<li>
+<p>click <strong>Edit</strong> (✎) in the tray under the phase strip, or ✎ in the second Waypoints panel;</p>
+</li>
+<li>
+<p>click <strong>Waypoints</strong> in the Pickup, Centering, Deposit or Regrip panel.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>From a phase cell, or from the Centering, Deposit or Regrip panel, it shows that phase. Otherwise it shows the phase the robot is in at the time.</p>
+</div>
+<div class="paragraph">
+<p>It opens beside the phase&#8217;s station. It stays open until you close it with its ✕. Its title names the waypoint the robot is on, for example <strong>Waypoints • Centering · CenDropPos</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/waypoints.png" alt="The Waypoints panel">
+</div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_moving_through_the_phase">Moving through the phase</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 85.7143%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Control</th>
+<th class="tableblock halign-left valign-top">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Phase</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A slider that stops at each waypoint of the phase. The robot goes to the waypoint it stops at; its name shows below.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Simulate</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A slider that rests in the middle. Drag left to move towards the previous waypoint, right towards the next, in steps of 20 %.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Prev</strong>, <strong>Next</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The previous or next waypoint</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Deposit</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In the Deposit phase, jumps to <strong>DropPartPos</strong>; in any other phase, to the phase&#8217;s last waypoint</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The panel stays within the phase it shows: the sliders and <strong>Prev</strong> and <strong>Next</strong> stop at its first and last waypoint. To work on another phase, click its cell in the phase strip.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reading_a_waypoint">Reading a waypoint</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Display</strong> chooses how the waypoint is shown:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Display</th>
+<th class="tableblock halign-left valign-top">Fields</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Robot Axes</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The six joint values J1 … J6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Grip Point</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The TCP&#8217;s position X, Y, Z and rotation W, P, R</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Wrist Point</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The same for the flange instead of the TCP</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>All values are in the robot&#8217;s world frame.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_changing_a_waypoint">Changing a waypoint</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Type a new value in a field. The field turns amber.</p>
+</li>
+<li>
+<p>Press <strong>Enter</strong> to apply it. <strong>Esc</strong> throws it away; <strong>Tab</strong> moves to the next field.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The arrows beside a field, and the mouse wheel over it, apply a step at once: 10 mm for X, Y and Z, 1° for angles and joints.</p>
+</div>
+<div class="paragraph">
+<p>The robot moves to the changed pose, and the path is drawn around it:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>yellow triangles at the previous, current and next waypoints;</p>
+</li>
+<li>
+<p>yellow lines for straight moves;</p>
+</li>
+<li>
+<p>white lines for joint moves.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>What changes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Only this waypoint.</strong> The rest of the cycle is not planned again.</p>
+</li>
+<li>
+<p><strong>Home</strong> is the first and the last waypoint; changing it changes both.</p>
+</li>
+<li>
+<p><strong>A pose the robot can&#8217;t reach</strong> leaves the joints as they were. The phase strip reports it as out of reach.</p>
+</li>
+<li>
+<p><strong>The phase strip</strong> checks the cycle again a moment later.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Anything that plans the cycle again replaces your edits with newly planned waypoints. Make those changes first, and edit waypoints last. That includes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>recompute</strong>;</p>
+</li>
+<li>
+<p>the part&#8217;s place or the grip in the Pickup, Centering, Deposit or Regrip panel, <strong>Next heading</strong> and <strong>Flip part</strong>;</p>
+</li>
+<li>
+<p>the grip in the Gripper panel, and <strong>Choose for the part</strong>;</p>
+</li>
+<li>
+<p>the part&#8217;s place on a machine bed;</p>
+</li>
+<li>
+<p>switching the robot or loading a cell config.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_advanced">Advanced</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Control</th>
+<th class="tableblock halign-left valign-top">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Copy Axes</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Copies the current waypoint&#8217;s joint values</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Paste Axes</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gives the current waypoint the copied joint values</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Reset All</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Puts every waypoint back as FRobot planned it</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Edited waypoints are saved in the solution file. <strong>Reset All</strong> still works after you open the solution again.</p>
+</div>
+<div class="paragraph">
+<p><strong>Configuration</strong>, <strong>Interpolate</strong>, <strong>Speed</strong>, <strong>Rounding</strong>, <strong>Insert</strong>, <strong>Remove</strong> and <strong>Robot Strategy</strong> are not available in this version: see <a href="../34_notavailableyet.html">Not available yet</a>.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_opening_it">Opening it</a>
+  </li>
+  <li level="1">
+   <a href="#_moving_through_the_phase">Moving through the phase</a>
+  </li>
+  <li level="1">
+   <a href="#_reading_a_waypoint">Reading a waypoint</a>
+  </li>
+  <li level="1">
+   <a href="#_changing_a_waypoint">Changing a waypoint</a>
+  </li>
+  <li level="1">
+   <a href="#_advanced">Advanced</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="23_simulation.html">Simulation</a></span>
+ <span class="next"><a href="25_replanning.html">Re-planning</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2023 by Metamation. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

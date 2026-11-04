@@ -1,0 +1,173 @@
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel2">
+<li><a href="#_the_grip_angle">The grip angle</a></li>
+<li><a href="#_the_same_panel_at_the_other_stations">The same panel at the other stations</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>When FRobot creates a solution, it places the stack on the pickup pallet:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Where:</strong> the part&#8217;s corner lies on the pallet&#8217;s corner, along the pallet&#8217;s axes.</p>
+</li>
+<li>
+<p><strong>Grip point:</strong> the robot picks the part at the centre of its bounding rectangle, on top of the stack.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To change how the part lies and how it is gripped, click the part on the pallet. The robot moves to the pickup, and the <strong>Pickup</strong> panel opens.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/pickup.png" alt="The Pickup panel">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 83.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Control</th>
+<th class="tableblock halign-left valign-top">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Position X</strong>, <strong>Y</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Moves the part on the pallet, in mm (the arrows step 10 mm)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Angle</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Turns the part about its pickup point, in degrees (the arrows step 5°)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Align corner</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Moves the part, at its present angle, back against the pallet&#8217;s corner</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Next heading</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Turns the gripper on the part to the next heading that works, in steps of 90°</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Layers</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The number of parts in the stack</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Simulate</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scrubs through the cycle: the number is the step, the slider moves through it</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Waypoints</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the Waypoints panel on the phase the robot is in: <a href="../20_Cycle/24_Waypoints.html">Waypoints</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>RG-Stations</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the Frames panel: <a href="../4_Cell/7_FramesAndRoles.html">Frames and roles</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Pallet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zooms the view out to the whole cell</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Enter</strong> applies a typed value; the arrows apply at once.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Every change here plans the cycle again, so waypoints you edited by hand are lost. Make these changes before you fine-tune waypoints.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_grip_angle">The grip angle</h3>
+<div class="paragraph">
+<p>To save the robot&#8217;s wrist from turning, FRobot may turn the grip on the part by 90° or 180°. It does not do this when you chose the heading with <strong>Next heading</strong>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Next heading</strong> reports <strong>Next heading: gripper turned to N° on the part</strong>, or that no other heading works. The message shows in the status line of the Part panel (<strong>settings ▸ Part</strong>), not in the Pickup panel.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<strong>Flip part</strong>, <strong>Table</strong> and <strong>Double station</strong> have no effect at the pickup in this version.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+<div class="sect1">
+<h2 id="_the_same_panel_at_the_other_stations">The same panel at the other stations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Click the part at another station to adjust it there. The same panel opens under that station&#8217;s name:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 30%;">
+<col style="width: 60%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Panel</th>
+<th class="tableblock halign-left valign-top">Opens when you click</th>
+<th class="tableblock halign-left valign-top">What differs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Centering</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the part on the centering table</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the part&#8217;s place and angle on the table; its gripper panel offers <strong>Use pickup grip</strong> (pick it up again with the same grip)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Deposit</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the folded part on the deposit, in a cell with a bending machine</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Flip part</strong> works here and turns the part over</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Regrip</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the folded part on the Overturner</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">its place on the Overturner; <strong>Centre on the cups</strong> centres it on the Overturner&#8217;s cups</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>In a cell without a bending machine, the part is put down flat, and clicking it opens the Pickup panel.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<strong>Flip part</strong> needs an Overturner in the cell, where the robot can take the part from its other side. Without one, the phase strip reports that the part would have to be turned over in the gripper.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
